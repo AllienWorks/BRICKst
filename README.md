@@ -1,6 +1,16 @@
 BRICKst
 =======
 
+* inspired by ZURB's Foundation
+
+
+Todo
+----
+
+* basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
+
+
+
 Read more
 ---------
 
