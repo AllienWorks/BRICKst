@@ -9,6 +9,11 @@ Todo
 
 * SCSS
 	* Table of Contents
+* GRID
+	* medium grid
+	* small grid
+	* offsets
+	* centering
 * Addons
 	* basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
 
