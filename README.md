@@ -7,7 +7,10 @@ BRICKst
 Todo
 ----
 
-* basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
+* SCSS
+	* Table of Contents
+* Addons
+	* basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
 
 
 

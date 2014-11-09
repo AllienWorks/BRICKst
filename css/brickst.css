@@ -1,6 +1,6 @@
-/*! BRICKst.scss v1.0.0 | GNU GPL License | allienworks.net */
 @import url(normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,400italic&subset=latin,latin-ext);
+/*! BRICKst v1.0.0 | GNU GPL License | allienworks.net */
 * {
   box-sizing: border-box; }
 
@@ -61,6 +61,18 @@ body {
 
 .large-1 {
   width: 8.33333%; }
+
+.hide {
+  display: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
 
 .button {
   font-weight: bold;
