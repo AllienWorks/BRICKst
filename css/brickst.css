@@ -72,6 +72,10 @@ a:hover {
 .large-1 {
   width: 8.33333%; }
 
+.large-centered {
+  float: none;
+  margin: 0 auto; }
+
 @media only screen and (max-width: 64.063rem) {
   .large-1, .large-2, .large-3, .large-4, .large-5, .large-6, .large-7, .large-8, .large-9, .large-10, .large-11, .large-12 {
     width: 100%; }
@@ -107,7 +111,15 @@ a:hover {
     width: 16.66667%; }
 
   .medium-1 {
-    width: 8.33333%; } }
+    width: 8.33333%; }
+
+  .large-centered {
+    float: left;
+    margin: none; }
+
+  .medium-centered {
+    float: none;
+    margin: 0 auto; } }
 @media only screen and (max-width: 40.063rem) {
   .medium-1, .medium-2, .medium-3, .medium-4, .medium-5, .medium-6, .medium-7, .medium-8, .medium-9, .medium-10, .medium-11, .medium-12 {
     width: 100%; }
@@ -143,7 +155,16 @@ a:hover {
     width: 16.66667%; }
 
   .small-1 {
-    width: 8.33333%; } }
+    width: 8.33333%; }
+
+  .large-centered,
+  .medium-centered {
+    float: left;
+    margin: none; }
+
+  .small-centered {
+    float: none;
+    margin: 0 auto; } }
 .hide {
   display: none; }
 
@@ -167,6 +188,7 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
   color: inherit;
+  font-size: 1rem;
   display: inline-block;
   padding: 0.7rem 1.2rem;
   border: 3px solid #4374b7;

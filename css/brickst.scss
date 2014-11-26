@@ -65,6 +65,10 @@ a:hover { color: $primary - #222; }
 .large-2 { width: 1px / 6px * 100%; }
 .large-1 { width: 1px / 12px * 100%; }
 
+.large-centered {
+	float: none; margin: 0 auto;
+}
+
 // Medium Grid
 @media only screen and (max-width: $mediumBreak) {
 	.large-1, .large-2, .large-3, .large-4, .large-5, .large-6, .large-7, .large-8, .large-9, .large-10, .large-11, .large-12 { width: 100%; }
@@ -79,6 +83,11 @@ a:hover { color: $primary - #222; }
 	.medium-3 { width: 1px / 4px * 100%; }
 	.medium-2 { width: 1px / 6px * 100%; }
 	.medium-1 { width: 1px / 12px * 100%; }
+
+	.large-centered { float: left; margin: none; }
+	.medium-centered {
+		float: none; margin: 0 auto;
+	}
 }
 
 // Small Grid
@@ -95,6 +104,12 @@ a:hover { color: $primary - #222; }
 	.small-3 { width: 1px / 4px * 100%; }
 	.small-2 { width: 1px / 6px * 100%; }
 	.small-1 { width: 1px / 12px * 100%; }
+
+	.large-centered,
+	.medium-centered { float: left; margin: none; }
+	.small-centered {
+		float: none; margin: 0 auto;
+	}
 }
 
 
@@ -128,7 +143,7 @@ a:hover { color: $primary - #222; }
 // ------ UI ELEMENTS ------ //
 
 .button {
-	font-weight: bold; text-decoration: none; color: inherit;
+	font-weight: bold; text-decoration: none; color: inherit; font-size: 1rem;
 	display: inline-block; padding: 0.7rem 1.2rem;
 	border: 3px solid $primary; border-radius: $borderRadius;
 	&:hover { background: $primary; color: $white; }

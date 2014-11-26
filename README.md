@@ -13,7 +13,7 @@ Todo
 	* [x] medium grid
 	* [x] small grid
 	* [_] offsets
-	* [_] centering
+	* [x] centering
 * Addons
 	* basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
 
