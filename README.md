@@ -4,18 +4,22 @@ BRICKst
 * inspired by ZURB's Foundation
 
 
-Todo
-----
+Todo/Features
+-------------
 
 * SCSS
-	* Table of Contents
+	* [_] Table of Contents
 * GRID
-	* [x] medium grid
-	* [x] small grid
+	* [×] medium grid
+	* [×] small grid
 	* [_] offsets
-	* [x] centering
+	* [×] centering
+* Forms
+    * [_] inputs, textareas, ...
+    * [_] input errors/alerts
+    * [_] sample Form code for Docs
 * Addons
-	* basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
+	* [_] basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
 
 
 

@@ -44,6 +44,12 @@ a:hover { color: $primary - #222; }
 	&.expand { max-width: 100%; }
 	&.collapse .column,
 	&.collapse .columns { padding: 0; }
+	&.narrow .column,
+	&.narrow .columns { padding: 0 ($gutterWidth / 2); }
+	.row {
+		margin: 0 (-$gutterWidth);
+		&.narrow { margin: 0 (-$gutterWidth/2); }
+	}
 }
 .column,
 .columns {
@@ -113,6 +119,17 @@ a:hover { color: $primary - #222; }
 }
 
 
+
+// ------ FORMS ------ //
+
+input { max-width: 100%; }
+
+
+
+
+
+
+
 // ------ RESPONSIVITY (temp) ------ //
 
 // Medium
@@ -142,7 +159,7 @@ a:hover { color: $primary - #222; }
 
 // ------ UI ELEMENTS ------ //
 
-.button {
+.button, button {
 	font-weight: bold; text-decoration: none; color: inherit; font-size: 1rem;
 	display: inline-block; padding: 0.7rem 1.2rem;
 	border: 3px solid $primary; border-radius: $borderRadius;

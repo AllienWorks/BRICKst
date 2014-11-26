@@ -29,6 +29,12 @@ a:hover {
     max-width: 100%; }
   .row.collapse .column, .row.collapse .columns {
     padding: 0; }
+  .row.narrow .column, .row.narrow .columns {
+    padding: 0 0.75rem; }
+  .row .row {
+    margin: 0 -1.5rem; }
+    .row .row.narrow {
+      margin: 0 -0.75rem; }
 
 .column,
 .columns {
@@ -165,6 +171,9 @@ a:hover {
   .small-centered {
     float: none;
     margin: 0 auto; } }
+input {
+  max-width: 100%; }
+
 .hide {
   display: none; }
 
@@ -184,7 +193,7 @@ a:hover {
   -ms-transition: all 0.3s;
   transition: all 0.3s; }
 
-.button {
+.button, button {
   font-weight: bold;
   text-decoration: none;
   color: inherit;
@@ -193,20 +202,20 @@ a:hover {
   padding: 0.7rem 1.2rem;
   border: 3px solid #4374b7;
   border-radius: 4px; }
-  .button:hover {
+  .button:hover, button:hover {
     background: #4374b7;
     color: white; }
-  .button.tiny {
+  .button.tiny, button.tiny {
     padding: 0.3rem 0.7rem;
     font-size: 0.65rem; }
-  .button.small {
+  .button.small, button.small {
     padding: 0.5rem 0.95rem;
     font-size: 0.825rem; }
-  .button.large {
+  .button.large, button.large {
     padding: 0.9rem 1.45rem;
     font-size: 1.125rem; }
-  .button.huge {
+  .button.huge, button.huge {
     padding: 1.1rem 1.9rem;
     font-size: 1.35rem; }
-  .button.expand {
+  .button.expand, button.expand {
     width: 100%; }
