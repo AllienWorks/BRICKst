@@ -10,7 +10,7 @@
 <body>
 
 <div class="row">
-	<div class="small-10 medium-6 large-8 columns">
+	<div class="small-9 medium-6 large-8 columns">
 		<h1>BRICKst framework</h1>
 		<p class="lead">
 			BRICKst is yet another CSS framework for kickstarting your projects. Inspired by ZURB's Foundation, OOCSS, SASS amazing powers and more.
@@ -29,11 +29,16 @@
 			<a href="#" class="large button">Large</a>
 			<a href="#" class="huge button">Huge</a>
 		</p>
-		<h3>Consecteur</h3>
-		<ol>
-			<li>dolor sit amet</li>
-			<li>lorem ipsum afterwards</li>
-		</ol>
+		<h3>Grid Rows</h3>
+		<p>
+			12-column rows by default, nestable (two levels confirmed :)
+		</p>
+		<ul>
+			<li><b>.row</b> – classic row with max-width defined</li>
+			<li><b>.row.narrow</b> – row with smaller gutters between columns (by half)</li>
+			<li><b>.row.collapse</b> – no gutters between columns at all</li>
+			<li><b>.row.expand</b> – full-width row</li>
+		</ul>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint aliquid, soluta ad?
 		</p>
@@ -45,17 +50,17 @@
 			<li>amet id nulla praesentium</li>
 		</ul>
 	</div>
-	<div class="small-2 medium-6 large-4 columns">
+	<div class="small-3 medium-6 large-4 columns">
 		<h1>And to fill it up..</h1>
 
 		<form>
-			<div class="row">
-				<div class="large-6 columns">
+			<div class="row narrow">
+				<div class="large-5 medium-6 columns">
 					<label>Name
 						<input type="text" placeholder="Name">
 					</label>
 				</div>
-				<div class="large-6 columns">
+				<div class="large-7 medium-6 columns">
 					<label>Surname
 						<input type="text" placeholder="Surame">
 					</label>

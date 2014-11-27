@@ -14,6 +14,7 @@ Todo/Features
 	* [×] small grid
 	* [_] offsets
 	* [×] centering
+    * [×] nestable
 * Forms
     * [_] inputs, textareas, ...
     * [_] input errors/alerts
