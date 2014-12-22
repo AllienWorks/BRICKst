@@ -16,8 +16,8 @@ $black: #202020;
 $white: #fff;
 
 // Breakpoints
-$mediumBreak: 64.063rem;
-$smallBreak: 40.063rem;
+$break-medium: 64.063rem;
+$break-small: 40.063rem;
 
 // Grid
 $rowWidth: 64rem;
@@ -32,6 +32,21 @@ html { font-size: 16px; }
 body { font-family: "Alegreya Sans", sans-serif; cursor: default; }
 a { text-decoration: none; color: $primary; }
 a:hover { color: $primary - #222; }
+
+
+
+// ------ MIXINS ------ //
+
+@mixin respond-to($media) {
+  @if $media == small {
+  	// @include respond-to(small) {  }
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium {
+  	// @include respond-to(medium) {  }
+    @media only screen and (max-width: $break-medium) { @content; }
+  }
+}
 
 
 
@@ -76,7 +91,7 @@ a:hover { color: $primary - #222; }
 }
 
 // Medium Grid
-@media only screen and (max-width: $mediumBreak) {
+@include respond-to(medium) {
 	.large-1, .large-2, .large-3, .large-4, .large-5, .large-6, .large-7, .large-8, .large-9, .large-10, .large-11, .large-12 { width: 100%; }
 	.medium-11 { width: (100%/12*11); }
 	.medium-10 { width: (100%/12*10); }
@@ -97,7 +112,7 @@ a:hover { color: $primary - #222; }
 }
 
 // Small Grid
-@media only screen and (max-width: $smallBreak) {
+@include respond-to(small) {
 	.medium-1, .medium-2, .medium-3, .medium-4, .medium-5, .medium-6, .medium-7, .medium-8, .medium-9, .medium-10, .medium-11, .medium-12 { width: 100%; }
 	.small-11 { width: (100%/12*11); }
 	.small-10 { width: (100%/12*10); }
@@ -125,18 +140,6 @@ a:hover { color: $primary - #222; }
 input { width: 100%; margin-bottom: 0.7rem; }
 label { cursor: pointer; }
 
-
-
-
-
-
-// ------ RESPONSIVITY (temp) ------ //
-
-// Medium
-@media only screen and (max-width: $mediumBreak) {}
-
-// Small
-@media only screen and (max-width: $smallBreak) {}
 
 
 
