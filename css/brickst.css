@@ -171,12 +171,20 @@ a:hover {
   .small-centered {
     float: none;
     margin: 0 auto; } }
-input {
+input,
+select {
   width: 100%;
   margin-bottom: 0.7rem; }
+  input[type="checkbox"], input[type="radio"],
+  select[type="checkbox"],
+  select[type="radio"] {
+    width: auto; }
 
 label {
   cursor: pointer; }
+
+img {
+  max-width: 100%; }
 
 .hide {
   display: none; }
@@ -209,7 +217,7 @@ label {
   background: none; }
   .button:hover, button:hover {
     background: #4374b7;
-    color: white; }
+    color: #fff; }
   .button.tiny, button.tiny {
     padding: 0.3rem 0.7rem;
     font-size: 0.65rem; }

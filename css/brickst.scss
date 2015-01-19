@@ -26,10 +26,13 @@ $gutterWidth: 1.5rem;
 // UI
 $borderRadius: 4px;
 
+// Typography
+$font: "Alegreya Sans", sans-serif;
+
 
 * { box-sizing: border-box; }
 html { font-size: 16px; }
-body { font-family: "Alegreya Sans", sans-serif; cursor: default; }
+body { font-family: $font; cursor: default; }
 a { text-decoration: none; color: $primary; }
 a:hover { color: $primary - #222; }
 
@@ -48,6 +51,17 @@ a:hover { color: $primary - #222; }
   }
 }
 
+// @include gradient (<top-color>, <bottom-color>);
+@mixin gradient($top, $bottom) {
+	background: $top;
+	background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom));
+	background: -webkit-linear-gradient(top, $top 0%,$bottom 100%);
+	background: -o-linear-gradient(top, $top 0%,$bottom 100%);
+	background: -ms-linear-gradient(top, $top 0%,$bottom 100%);
+	background: linear-gradient(to bottom, $top 0%,$bottom 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+}
 
 
 
@@ -137,10 +151,20 @@ a:hover { color: $primary - #222; }
 
 // ------ FORMS ------ //
 
-input { width: 100%; margin-bottom: 0.7rem; }
+input,
+select {
+	width: 100%; margin-bottom: 0.7rem;
+	&[type="checkbox"],
+	&[type="radio"] { width: auto; }
+}
 label { cursor: pointer; }
 
 
+
+
+// ------ MEDIA ------ //
+
+img { max-width: 100%; }
 
 
 

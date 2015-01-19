@@ -35,7 +35,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2578,
+				"buffer_size": 3481,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "css/brickst.scss",
 			"settings":
 			{
-				"buffer_size": 3328,
+				"buffer_size": 4345,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 397,
+				"buffer_size": 549,
 				"line_ending": "Windows"
 			}
 		}
@@ -112,10 +112,12 @@
 	},
 	"file_history":
 	[
+		"/D/Xampp/htdocs/BRICKst/css/brickst.min.css",
+		"/D/Xampp/htdocs/magnetic/magnetic.sublime-workspace",
+		"/D/Copy/Mindblow/Treomedia/Tebau/bannery/termokose.sk/_matro/list-bullet.svg",
 		"/C/Users/Martin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Martin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/D/Xampp/htdocs/BRICKst/css/brickst.css",
-		"/D/Xampp/htdocs/BRICKst/css/brickst.min.css",
 		"/D/Copy/default-styles.css",
 		"/D/Xampp/htdocs/BRICKst/LICENCE",
 		"/D/Copy/AllienWorks/projekty/Cryptocurrency Icons/webfont/demo.html",
@@ -233,7 +235,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -248,6 +250,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"smallBreak",
+			"mediumBreak",
+			"ol",
+			"large",
+			"width",
+			"6",
+			"Name",
+			"</div>",
+			"display: block; ",
+			"medium",
 			"large",
 			"left",
 			" }",
@@ -365,17 +377,7 @@
 			"\"member\"",
 			"member",
 			"medium",
-			"00acee",
-			"span",
-			"text",
-			"#",
-			"0",
-			"orbit",
-			"1000x300",
-			"large",
-			"400x225",
-			"1a1a1d",
-			"@grey"
+			"00acee"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -409,15 +411,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2578,
+						"buffer_size": 3481,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1993,
-								1993
+								770,
+								770
 							]
 						],
 						"settings":
@@ -474,16 +476,16 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 495.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -492,15 +494,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3328,
+						"buffer_size": 4345,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2004,
-								2004
+								193,
+								193
 							]
 						],
 						"settings":
@@ -559,10 +561,10 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 1755.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -571,15 +573,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 397,
+						"buffer_size": 549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								187,
+								187
 							]
 						],
 						"settings":
@@ -638,7 +640,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -706,11 +708,11 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
