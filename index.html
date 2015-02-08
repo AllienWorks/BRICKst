@@ -13,14 +13,22 @@
 	<div class="small-9 medium-6 large-8 columns">
 		<h1>BRICKst framework</h1>
 		<p class="lead">
-			BRICKst is yet another CSS framework for kickstarting your projects. Inspired by ZURB's Foundation, OOCSS, SASS amazing powers and more.
+			BRICKst is yet another mobile-first CSS framework for kickstarting your projects. Inspired by ZURB's Foundation (I mean, I pretty much copied their grid solution), OOCSS, SASS amazing powers and more.
 		</p>
+		
+		<h3>Grid</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis perspiciatis sed quod sequi? Assumenda temporibus atque beatae porro earum libero laudantium et vitae, enim. <a href="#">Fugit dolore iusto</a> ad blanditiis, odit ipsam laudantium quidem veniam maiores mollitia sunt, voluptas necessitatibus!
+			12-column rows by default, nestable (one level confirmed :)
 		</p>
-		<h2>Fancy more assumenda?</h2>
+		<ul>
+			<li><b>.row</b> – classic row with max-width defined</li>
+			<li><b>.row.narrow</b> – row with smaller gutters between columns (by half)</li>
+			<li><b>.row.collapse</b> – no gutters between columns at all</li>
+			<li><b>.row.expand</b> – full-width row</li>
+		</ul>
+		<h3>Buttons</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum autem esse saepe, dolorum in earum aperiam deleniti dolor sunt consectetur ut odit repellendus provident voluptates fugit delectus repellat dolorem enim illum exercitationem, amet id nulla praesentium. Sed voluptatem, dicta quae!
+			5 sizes, 5 variants (default, secondary, success, alert, warning)
 		</p>
 		<p>
 			<a href="#" class="tiny button">Tiny</a>
@@ -29,30 +37,19 @@
 			<a href="#" class="large button">Large</a>
 			<a href="#" class="huge button">Huge</a>
 		</p>
-		<h3>Grid Rows</h3>
-		<p>
-			12-column rows by default, nestable (two levels confirmed :)
-		</p>
-		<ul>
-			<li><b>.row</b> – classic row with max-width defined</li>
-			<li><b>.row.narrow</b> – row with smaller gutters between columns (by half)</li>
-			<li><b>.row.collapse</b> – no gutters between columns at all</li>
-			<li><b>.row.expand</b> – full-width row</li>
-		</ul>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint aliquid, soluta ad?
-		</p>
-		<h4>Trés bien</h4>
-		<ul>
-			<li>dolorem enim illum</li>
-			<li>consectetur adipisicing</li>
-			<li>facilis perspiciatis sed quod sequi? Assumenda temporibus atque beatae porro earum libero laudantium et vitae, enim. Fugit dolore iusto ad blanditiis</li>
-			<li>amet id nulla praesentium</li>
-		</ul>
+		<h3>Panels</h3>
+		<div class="panel hide-for-small">
+			<p>Simple panels for whatever you want. This panel is .hide-for-small, therefore only visible on medium and large screens.</p>
+		</div>
 	</div>
-	<div class="small-3 medium-6 large-4 columns">
-		<h1>And to fill it up..</h1>
 
+
+
+
+
+
+	<div class="small-3 medium-6 large-4 columns">
+		<h1>Example form</h1>
 		<form>
 			<div class="row narrow">
 				<div class="large-5 medium-6 columns">
@@ -77,18 +74,20 @@
 				</div>
 			</div>
 		</form>
-		
-		<p>
-			Here comes some sexy large-5 gizmo.
-		</p>
-		<h5>Beep</h5>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum autem esse saepe, dolorum in earum aperiam deleniti dolor sunt consectetur ut odit repellendus provident voluptates fugit delectus repellat dolorem enim illum exercitationem, amet id nulla praesentium. Sed voluptatem, dicta quae!
-		</p>
-		<h6>Doop</h6>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident autem voluptas corporis.
-		</p>
+
+		<h2>Implemented features</h2>
+		<ul>
+			<li><strong>Grid</strong></li>
+			<li>
+				<strong>UI elements</strong>
+				<ul>
+					<li>Buttons</li>
+					<li>Forms</li>
+					<li>Panels</li>
+				</ul>
+			</li>
+		</ul>
+
 	</div>
 </div>
 

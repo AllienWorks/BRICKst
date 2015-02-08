@@ -15,6 +15,7 @@ Todo/Features
 	* [_] offsets
 	* [×] centering
     * [×] nestable
+    * [×] přidat definice class pro "větší" viewporty (např. aby medium-6 fungoval i na desktopech, sám o sobě)
 * Forms
     * [_] inputs, textareas, ...
     * [_] input errors/alerts

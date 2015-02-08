@@ -35,7 +35,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3481,
+				"buffer_size": 2297,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "css/brickst.scss",
 			"settings":
 			{
-				"buffer_size": 4345,
+				"buffer_size": 5662,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 549,
+				"buffer_size": 657,
 				"line_ending": "Windows"
 			}
 		}
@@ -112,6 +112,7 @@
 	},
 	"file_history":
 	[
+		"/D/Xampp/htdocs/track.ink/sftp-config.json",
 		"/D/Xampp/htdocs/BRICKst/css/brickst.min.css",
 		"/D/Xampp/htdocs/magnetic/magnetic.sublime-workspace",
 		"/D/Copy/Mindblow/Treomedia/Tebau/bannery/termokose.sk/_matro/list-bullet.svg",
@@ -250,6 +251,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"medium",
+			"alert",
 			"smallBreak",
 			"mediumBreak",
 			"ol",
@@ -375,9 +378,7 @@
 			"	.",
 			"medium",
 			"\"member\"",
-			"member",
-			"medium",
-			"00acee"
+			"member"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -411,15 +412,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3481,
+						"buffer_size": 2297,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								770,
-								770
+								1018,
+								1018
 							]
 						],
 						"settings":
@@ -472,14 +473,16 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "54502cf6",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -494,15 +497,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4345,
+						"buffer_size": 5662,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								193,
-								193
+								4375,
+								4324
 							]
 						],
 						"settings":
@@ -556,12 +559,14 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
+							"bs_sintax": "scss",
+							"buffer_scroll_name": "0485e8cc",
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1755.0,
+						"translation.y": 1980.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -573,15 +578,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 549,
+						"buffer_size": 657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								187,
-								187
+								313,
+								313
 							]
 						],
 						"settings":
@@ -634,13 +639,15 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
+							"bs_sintax": "markdown",
+							"buffer_scroll_name": "8c3b69b6",
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -711,6 +718,14 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"D:\\Xampp\\htdocs\\track.ink\\Track-INK.sublime-project"
+			],
+			[
+				"trac",
+				"D:\\Xampp\\htdocs\\track.ink\\Track-INK.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
