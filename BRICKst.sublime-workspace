@@ -35,7 +35,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2297,
+				"buffer_size": 2459,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "css/brickst.scss",
 			"settings":
 			{
-				"buffer_size": 5662,
+				"buffer_size": 5664,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 657,
+				"buffer_size": 800,
 				"line_ending": "Windows"
 			}
 		}
@@ -59,9 +59,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"all",
+				"File: Save All"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -91,7 +95,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 408.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -112,6 +116,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Martin/Desktop/foundation.css",
 		"/D/Xampp/htdocs/track.ink/sftp-config.json",
 		"/D/Xampp/htdocs/BRICKst/css/brickst.min.css",
 		"/D/Xampp/htdocs/magnetic/magnetic.sublime-workspace",
@@ -251,6 +256,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@if $media == medium {\n  	// @include respond-to(medium) {  }\n    @media only screen and (min-width: $break-medium) { @content; }\n  }",
+			"small",
 			"medium",
 			"alert",
 			"smallBreak",
@@ -376,9 +383,7 @@
 			"medium",
 			"large",
 			"	.",
-			"medium",
-			"\"member\"",
-			"member"
+			"medium"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -412,15 +417,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2297,
+						"buffer_size": 2459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1018,
-								1018
+								1013,
+								1013
 							]
 						],
 						"settings":
@@ -479,16 +484,16 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -497,15 +502,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5662,
+						"buffer_size": 5664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4375,
-								4324
+								209,
+								209
 							]
 						],
 						"settings":
@@ -566,10 +571,10 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1980.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -578,15 +583,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 657,
+						"buffer_size": 800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								313,
-								313
+								673,
+								673
 							]
 						],
 						"settings":
@@ -647,7 +652,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -718,6 +723,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"all",
+				"D:\\Xampp\\htdocs\\allienworks_restart\\wp-content\\themes\\allienworks-iii\\AllienWorks III.sublime-project"
+			],
 			[
 				"",
 				"D:\\Xampp\\htdocs\\track.ink\\Track-INK.sublime-project"

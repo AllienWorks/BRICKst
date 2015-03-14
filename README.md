@@ -17,11 +17,14 @@ Todo/Features
     * [×] nestable
     * [×] přidat definice class pro "větší" viewporty (např. aby medium-6 fungoval i na desktopech, sám o sobě)
 * Forms
-    * [_] inputs, textareas, ...
+    * [×] inputs, textareas, ...
     * [_] input errors/alerts
     * [_] sample Form code for Docs
 * Addons
 	* [_] basic styly na zvýraznění columns (po customizaci gridu) - pro vygenerování guide-gridu v PS
+* JS
+    * [ ] http://css-tricks.com/equal-height-blocks-in-rows/ = equalizer
+        - nebo https://github.com/liabru/jquery-match-height
 
 
 

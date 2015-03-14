@@ -13,9 +13,10 @@ body {
 a {
   text-decoration: none;
   color: #4374b7; }
-
-a:hover {
-  color: #215295; }
+  a:hover {
+    color: #215295; }
+  a:focus {
+    outline: none; }
 
 .row {
   width: 100%;
@@ -31,16 +32,15 @@ a:hover {
     padding: 0; }
   .row.narrow .column, .row.narrow .columns {
     padding: 0 0.75rem; }
-  .row .row {
-    margin: 0 -1.5rem; }
-    .row .row.narrow {
-      margin: 0 -0.75rem; }
+  .row .row.narrow {
+    margin: 0 -0.75rem; }
 
 .column,
 .columns {
   float: left;
   width: 100%;
-  padding: 0 1.5rem; }
+  padding: 0 1.5rem;
+  position: relative; }
   .column.end,
   .columns.end {
     float: right; }
@@ -172,10 +172,13 @@ a:hover {
     float: left;
     margin: 0; } }
 input,
+textarea,
 select {
   width: 100%;
   margin-bottom: 0.7rem; }
   input[type="checkbox"], input[type="radio"],
+  textarea[type="checkbox"],
+  textarea[type="radio"],
   select[type="checkbox"],
   select[type="radio"] {
     width: auto; }
@@ -185,27 +188,36 @@ label {
 
 img {
   max-width: 100%;
+  height: auto;
   -ms-interpolation-mode: bicubic; }
+
+iframe {
+  display: block;
+  max-width: 100%; }
 
 .hide {
   display: none; }
 
 .hide-for-small {
-  display: none; }
+  display: none !important; }
   @media only screen and (min-width: 40.063rem) {
     .hide-for-small {
-      display: inherit; } }
+      display: inherit !important; } }
 
 @media only screen and (min-width: 40.063rem) {
   .hide-for-medium {
-    display: none; } }
+    display: none !important; } }
 @media only screen and (min-width: 64.063rem) {
   .hide-for-medium {
-    display: inherit; } }
+    display: inherit !important; } }
 
 @media only screen and (min-width: 64.063rem) {
   .hide-for-large {
-    display: none; } }
+    display: none !important; } }
+
+@media only screen and (min-width: 40.063rem) {
+  .show-for-small {
+    display: none !important; } }
 
 .text-left {
   text-align: left; }
@@ -222,6 +234,10 @@ img {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s; }
+
+.clearfix {
+  clear: both;
+  display: table; }
 
 .button, button {
   font-weight: bold;
@@ -271,3 +287,8 @@ img {
   background: #DCDDDE;
   padding: 0.1rem 1.4rem;
   margin: 1rem 0; }
+
+table tr {
+  border-bottom: 1px solid #ddd; }
+  table tr:nth-child(2n) {
+    background: #fcfcfc; }
