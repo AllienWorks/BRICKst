@@ -42,6 +42,7 @@ a {
 
 // ------ MIXINS ------ //
 
+// Responsive mixin (Foundation-like medium/large + custom-made "hd" breakpoint)
 @mixin respond-to($media) {
   @if $media == medium {
   	// @include respond-to(medium) {  }
@@ -56,6 +57,13 @@ a {
     @media only screen and (min-width: $break-hd) { @content; }
   }
 }
+
+// Custom responsivity (px-based, for when default breakpoints aren't enough)
+@mixin respond-from($size) {
+  // Usage: @include respond-from(741px) {  }
+  @media only screen and (min-width: $size) { @content; }
+}
+
 
 // @include gradient (<top-color>, <bottom-color>);
 @mixin gradient($top, $bottom) {
