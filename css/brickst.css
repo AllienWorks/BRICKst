@@ -230,10 +230,12 @@ iframe {
 
 .tfx, .button, button, a {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
   transition: all 0.3s; }
+
+.zoom {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1); }
 
 .clearfix {
   clear: both;
@@ -292,3 +294,5 @@ table tr {
   border-bottom: 1px solid #ddd; }
   table tr:nth-child(2n) {
     background: #fcfcfc; }
+table.expand {
+  width: 100%; }

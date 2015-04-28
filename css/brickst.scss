@@ -203,10 +203,8 @@ iframe { display: block; max-width: 100%; }
 .text-center { text-align: center; }
 
 // Effects
-.tfx, a {
-  -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
-  -ms-transition: all 0.3s; transition: all 0.3s;
-}
+.tfx, a { -webkit-transition: all 0.3s; transition: all 0.3s; }
+.zoom { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
 // Clearfix
 .clearfix { clear: both; display: table; }
@@ -257,4 +255,5 @@ table {
 		border-bottom: 1px solid #ddd;
 		&:nth-child(2n) { background: #fcfcfc; }
 	}
+	&.expand { width: 100%; }
 }
