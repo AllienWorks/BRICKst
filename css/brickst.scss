@@ -1,6 +1,6 @@
 @import 'normalize.css';
 
-/*! BRICKst v1.0.0 | GNU GPL License | allienworks.net */
+/*! BRICKst v1.0.0 | MIT License | allienworks.net */
 
 
 // ------ GENERAL & CONFIG ------ //
@@ -35,7 +35,7 @@ html { font-size: 16px; }
 body { font-family: $font; cursor: default; }
 a {
 	text-decoration: none; color: $primary;
-	&:hover { color: $primary - #222; }
+	&:hover { color: darken($primary, 10%); }
 	&:focus { outline: none; }
 }
 
