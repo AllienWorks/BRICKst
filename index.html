@@ -1,24 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>BRICKst</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>BRICKst – The first Web brick</title>
+	<!-- Open:Graph | http://ogp.me -->
+	<meta property="og:title" content="BRICKst – The first Web brick" />
+	<meta property="og:description" content="BRICKst is yet another mobile-first CSS framework for kickstarting your projects. Inspired by ZURB's Foundation (I mean, I pretty much copied their grid solution), OOCSS, SASS amazing powers and more." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://" />
+	<meta property="og:image" content="http://" />
+
 	<link rel="stylesheet" href="css/brickst.css">
 </head>
 <body>
 
 <div class="row">
-	<div class="large-8 columns">
+	<div id="content" class="small-9 medium-6 large-8 columns">
 		<h1>BRICKst framework</h1>
+		<blockquote>
+			<q>The first Web brick.</q>
+		</blockquote>
 		<p class="lead">
-			BRICKst is yet another CSS framework for kickstarting your projects. Inspired by ZURB's Foundation, OOCSS, SASS amazing powers and more.
+			BRICKst is yet another mobile-first CSS framework for kickstarting your projects. Inspired by ZURB's Foundation (I mean, I pretty much copied their grid solution), OOCSS, SASS amazing powers and more.
 		</p>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis perspiciatis sed quod sequi? Assumenda temporibus atque beatae porro earum libero laudantium et vitae, enim. <a href="#">Fugit dolore iusto</a> ad blanditiis, odit ipsam laudantium quidem veniam maiores mollitia sunt, voluptas necessitatibus!
+			Yes, I know. This "demo" is terrible so far. This will serve a purpose of a demo and documentation at some point in the future. Feel free to skim through <code>css/brickst.scss</code> to discover all the features.
 		</p>
-		<h2>Fancy more assumenda?</h2>
+		
+		<h2>SCSS Mixins</h2>
+
+		<h3>Responsivity</h3>
+		<ul>
+			<li><strong>respond-to(medium/large/hd)</strong> – Foundation-like breakpoints medium/large + custom-made "HD" break</li>
+			<li><strong>respond-from(XX units)</strong> – Custom breakpoints, when default aren't enough (e.g. <code>respond-from(123px)</code>)</li>
+		</ul>
+
+		<h3>Gradients</h3>
+		<ul>
+			<li><strong>gradient($top, $bottom)</strong> – easily create CSS gradients, enter both parameters ("from" and "to" colors); gradient is vertical, top to bottom</li>
+		</ul>
+
+
+
+		<h2>HTML</h2>
+		
+		<h3>Grid</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum autem esse saepe, dolorum in earum aperiam deleniti dolor sunt consectetur ut odit repellendus provident voluptates fugit delectus repellat dolorem enim illum exercitationem, amet id nulla praesentium. Sed voluptatem, dicta quae!
+			12-column rows by default, nestable (one level confirmed :)
+		</p>
+		<ul>
+			<li><b>.row</b> – classic row with max-width defined</li>
+			<li><b>.row.narrow</b> – row with smaller gutters between columns (by half)</li>
+			<li><b>.row.collapse</b> – no gutters between columns at all</li>
+			<li><b>.row.expand</b> – full-width row</li>
+		</ul>
+		
+		<h3>Buttons</h3>
+		<p>
+			5 sizes, 5 variants (default, secondary, success, alert, warning). Use <code>.expand</code> to expand the button to full available width of its container.
 		</p>
 		<p>
 			<a href="#" class="tiny button">Tiny</a>
@@ -27,36 +68,72 @@
 			<a href="#" class="large button">Large</a>
 			<a href="#" class="huge button">Huge</a>
 		</p>
-		<h3>Consecteur</h3>
-		<ol>
-			<li>dolor sit amet</li>
-			<li>lorem ipsum afterwards</li>
-		</ol>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint aliquid, soluta ad?
-		</p>
-		<h4>Trés bien</h4>
+		
+		<h3>Panels</h3>
+		<div class="panel hide-for-small">
+			<p>Simple panels for whatever you want. This panel is .hide-for-small, therefore only visible on medium and large screens.</p>
+		</div>
+		
+		<h3>Visibility Classes</h3>
 		<ul>
-			<li>dolorem enim illum</li>
-			<li>consectetur adipisicing</li>
-			<li>facilis perspiciatis sed quod sequi? Assumenda temporibus atque beatae porro earum libero laudantium et vitae, enim. Fugit dolore iusto ad blanditiis</li>
-			<li>amet id nulla praesentium</li>
+			<li><strong>.hide</strong> – hide completely (useful for fiddling with jQuery)</li>
+			<li><strong>.hide-for-small, .hide-for-medium, .hide-for-large</strong> – hide for specific viewports</li>
+			<li><strong>.show-for-small</strong> – explicitly show on specified viewports</li>
 		</ul>
-	</div>
-	<div class="large-4 columns">
-		<h1>And to fill it up..</h1>
+		
+		<h3>Typography</h3>
 		<p>
-			Here comes some sexy large-5 gizmo.
+			All elements, typography included, are reset by <a href="http://git.io/normalize">normalize.css</a> and therefore absolutely bare-bones. Styling is up to you.
 		</p>
-		<h5>Beep</h5>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum autem esse saepe, dolorum in earum aperiam deleniti dolor sunt consectetur ut odit repellendus provident voluptates fugit delectus repellat dolorem enim illum exercitationem, amet id nulla praesentium. Sed voluptatem, dicta quae!
-		</p>
-		<h6>Doop</h6>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident autem voluptas corporis.
-		</p>
-	</div>
+		<ul>
+			<li><strong>.text-left</strong> – align text to left</li>
+			<li><strong>.text-center</strong> – center text</li>
+			<li><strong>.text-right</strong> – align to right</li>
+		</ul>
+
+		<h3>Effects</h3>
+		<ul>
+			<li><strong>.tfx</strong> – short for "transition effects"; applies 0.3s linear animation to transitions (used on buttons)</li>
+			<li><strong>.zoom</strong> – scale element to 110% by default</li>
+		</ul>
+
+		<h3>Helper Classes</h3>
+		<ul>
+			<li><strong>.clearfix</strong> – *any comments are futile*</li>
+		</ul>
+
+		<h3>Example form</h3>
+		<form>
+			<div class="row narrow">
+				<div class="large-5 medium-6 columns">
+					<label>Name
+						<input type="text" placeholder="Name">
+					</label>
+				</div>
+				<div class="large-7 medium-6 columns">
+					<label>Surname
+						<input type="text" placeholder="Surame">
+					</label>
+				</div>
+			</div>
+			<div class="row narrow">
+				<div class="large-8 columns">
+					<label>Password
+						<input type="password" placeholder="Password">
+					</label>
+				</div>
+				<div class="large-4 columns">
+					<br><button type="submit" class="small expand">Yo.</button>
+				</div>
+			</div>
+		</form>
+
+	</div><!-- #content -->
+
+
+	<div id="sidebar" class="small-3 medium-6 large-4 columns">
+		<img src="http://placekitten.com/400/900">
+	</div><!-- #sidebar -->
 </div>
 
 	
