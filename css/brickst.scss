@@ -1,16 +1,16 @@
 @import 'normalize.css';
 
-/*! BRICKst v1.0.0 | GNU GPL License | allienworks.net */
+/*! BRICKst v1.0.0 | MIT License | allienworks.net */
 
 
 // ------ GENERAL & CONFIG ------ //
 
 // Colors
-$primary: #4374b7;
-$secondary: #DCDDDE;
-$success: #98C807;
-$alert: #D13814;
-$warning: #EF9421;
+$primary: #4374b7; // main color (blue by default)
+$secondary: #DCDDDE; // usually grayscale-ish, slightly darked than content background
+$success: #98C807; // greens
+$alert: #D13814; // reds
+$warning: #EF9421; // oranges :)
 $black: #202020;
 $white: #fff;
 
@@ -35,7 +35,7 @@ html { font-size: 16px; }
 body { font-family: $font; cursor: default; }
 a {
 	text-decoration: none; color: $primary;
-	&:hover { color: $primary - #222; }
+	&:hover { color: darken($primary, 10%); }
 	&:focus { outline: none; }
 }
 
@@ -81,7 +81,7 @@ a {
 
 // ------ GRID ------ //
 
-.row {
+.row { // shamelessly inspired by Foundation
 	width: 100%; max-width: $rowWidth; margin: 0 auto;
 	&:after { clear: both; content: " "; display: table; }
 	&.expand { max-width: 100%; }
@@ -203,6 +203,15 @@ iframe { display: block; max-width: 100%; }
 .show-for-small {
 	@include respond-to(medium) { display: none !important; }
 }
+.show-for-medium {
+	display: none !important;
+	@include respond-to(medium) { display: inherit !important; }
+	@include respond-to(large) { display: none; }
+}
+.show-for-large {
+	display: none;
+	@include respond-to(large) { display: inherit !important; }
+}
 
 
 // Text align
@@ -230,7 +239,6 @@ iframe { display: block; max-width: 100%; }
 	&.tiny { padding: 0.3rem 0.7rem; font-size: 0.65rem; }
 	&.small { padding: 0.5rem 0.95rem; font-size: 0.825rem; }
 	&.large { padding: 0.9rem 1.45rem; font-size: 1.125rem; }
-	&.huge { padding: 1.1rem 1.9rem; font-size: 1.35rem; }
 	&.expand { width: 100%; }
 	&.secondary {
 		border-color: $secondary;
@@ -264,4 +272,10 @@ table {
 		&:nth-child(2n) { background: #fcfcfc; }
 	}
 	&.expand { width: 100%; }
+}
+
+hr { margin: 2rem 0; border: 0; border-top: 1px solid $secondary; }
+
+code, kbd, pre, samp {
+	background: lighten($secondary, 5%);
 }

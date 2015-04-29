@@ -28,6 +28,8 @@
 		<p>
 			Yes, I know. This "demo" is terrible so far. This will serve a purpose of a demo and documentation at some point in the future. Feel free to skim through <code>css/brickst.scss</code> to discover all the features.
 		</p>
+
+		<hr>
 		
 		<h2>SCSS Mixins</h2>
 
@@ -42,7 +44,7 @@
 			<li><strong>gradient($top, $bottom)</strong> – easily create CSS gradients, enter both parameters ("from" and "to" colors); gradient is vertical, top to bottom</li>
 		</ul>
 
-
+		<hr>
 
 		<h2>HTML</h2>
 		
@@ -59,14 +61,13 @@
 		
 		<h3>Buttons</h3>
 		<p>
-			5 sizes, 5 variants (default, secondary, success, alert, warning). Use <code>.expand</code> to expand the button to full available width of its container.
+			4 sizes (tiny, small, default and large), 5 variants (default, secondary, success, alert, warning). Use <code>.expand</code> to expand the button to full available width of its container.
 		</p>
 		<p>
-			<a href="#" class="tiny button">Tiny</a>
-			<a href="#" class="small button">Small</a>
-			<a href="#" class="button">Button</a>
-			<a href="#" class="large button">Large</a>
-			<a href="#" class="huge button">Huge</a>
+			<a href="#" class="tiny button">Tiny Default</a>
+			<a href="#" class="small success button">Small Success</a>
+			<a href="#" class="warning button">Warning Button</a>
+			<a href="#" class="large alert button">Large Alert</a>
 		</p>
 		
 		<h3>Panels</h3>
@@ -78,7 +79,7 @@
 		<ul>
 			<li><strong>.hide</strong> – hide completely (useful for fiddling with jQuery)</li>
 			<li><strong>.hide-for-small, .hide-for-medium, .hide-for-large</strong> – hide for specific viewports</li>
-			<li><strong>.show-for-small</strong> – explicitly show on specified viewports</li>
+			<li><strong>.show-for-small, .show-for-medium, .show-for-large</strong> – explicitly show on specified viewports</li>
 		</ul>
 		
 		<h3>Typography</h3>
@@ -136,6 +137,7 @@
 	</div><!-- #sidebar -->
 </div>
 
-	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/brickst.js"></script>
 </body>
 </html>
