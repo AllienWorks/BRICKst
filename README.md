@@ -7,24 +7,26 @@ BRICKst is constantly in development, however slow the progress may be. I'm grad
 
 All code tweaks, little hacks and stuff are appreciated (e.g. in case you find some unfitting solution).
 
+Homepage & demo in preparation, not available at the moment.
+
 
 Todo/Features
 -------------
 
 * SCSS
-	* [_] Table of Contents
+	* [ ] Table of Contents
 * GRID
-	* [×] medium grid
-	* [×] small grid
-	* [_] offsets
-	* [×] centering
-    * [×] nestable
+	* [x] medium grid
+	* [x] small grid
+	* [ ] offsets
+	* [x] centering
+    * [ ] nestable (needs fixing)
 * Forms
-    * [×] inputs, textareas, ...
-    * [_] input errors/alerts
-    * [_] sample Form code for Docs
+    * [x] inputs, textareas, ...
+    * [ ] input errors/alerts
+    * [ ] sample Form code for Docs
 * Addons
-	* [_] basic styles for column highlighting (after grid customization) for easier creation of "guide grid" in Photoshop
+	* [ ] basic styles for column highlighting (after grid customization) for easier creation of "guide grid" in Photoshop
 * JS
     * [ ] column equalizer – http://css-tricks.com/equal-height-blocks-in-rows/ OR https://github.com/liabru/jquery-match-height
 
