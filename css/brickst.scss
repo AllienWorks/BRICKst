@@ -266,10 +266,10 @@ iframe { display: block; max-width: 100%; }
 
 // ------ DEFAULT HTML STYLING ------ //
 
+.table { max-width: 100%; overflow-x: auto; }
 table {
 	tr {
 		border-bottom: 1px solid #ddd;
-		&:nth-child(2n) { background: #fcfcfc; }
 	}
 	&.expand { width: 100%; }
 }

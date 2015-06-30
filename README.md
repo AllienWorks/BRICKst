@@ -21,6 +21,7 @@ Todo/Features
 	* [ ] offsets
 	* [x] centering
     * [ ] nestable (needs fixing)
+* [ ] Better typography (with vertical rhytm and aligned baselines)
 * Forms
     * [x] inputs, textareas, ...
     * [ ] input errors/alerts

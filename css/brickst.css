@@ -302,10 +302,12 @@ iframe {
   padding: 0.1rem 1.4rem;
   margin: 1rem 0; }
 
+.table {
+  max-width: 100%;
+  overflow-x: auto; }
+
 table tr {
   border-bottom: 1px solid #ddd; }
-  table tr:nth-child(2n) {
-    background: #fcfcfc; }
 table.expand {
   width: 100%; }
 
