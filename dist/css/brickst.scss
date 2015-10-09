@@ -28,10 +28,11 @@ $borderRadius: 4px;
 
 // Typography
 $font: "Open Sans", "Helvetica", "Arial", sans-serif;
+$line-height: 1.5rem;
 
 
 * { box-sizing: border-box; }
-html { font-size: 16px; }
+html { font-size: 16px; line-height: $line-height; }
 body { font-family: $font; cursor: default; }
 a {
 	text-decoration: none; color: $primary;
@@ -237,6 +238,12 @@ iframe { display: block; max-width: 100%; }
 }
 
 
+.show-grid { // inspired by https://sassline.com
+	background-image: linear-gradient(to bottom, #0ff 0px, rgba(255, 255, 255, 0) 1px);
+  background-repeat: repeat-y;
+  background-size: 100% 1rem;
+}
+
 
 // ------ UI ELEMENTS ------ //
 
@@ -246,25 +253,35 @@ iframe { display: block; max-width: 100%; }
 	background: $primary; border-radius: $borderRadius; border: none;
 	@extend .tfx;
 	&:hover { background: darken($primary, 7%); color: $white; }
+	&.toggled { background: darken($primary, 10%); box-shadow: 0 3px darken($primary, 24%) inset; }
+
+	// Button Sizes
 	&.tiny { padding: 0.3rem 0.7rem; font-size: 0.65rem; }
 	&.small { padding: 0.5rem 0.95rem; font-size: 0.825rem; }
 	&.large { padding: 0.9rem 1.45rem; font-size: 1.125rem; }
 	&.expand { width: 100%; }
+	
+	// Button Variants/Mods
 	&.secondary {
+		color: $black;
 		background: $secondary;
 		&:hover { background: darken($secondary, 7%); }
+		&.toggled { background: darken($secondary, 10%); box-shadow: 0 3px darken($secondary, 24%) inset; }
 	}
 	&.success {
 		background: $success;
 		&:hover { background: darken($success, 7%); }
+		&.toggled { background: darken($success, 10%); box-shadow: 0 3px darken($success, 24%) inset; }
 	}
 	&.alert {
 		background: $alert;
 		&:hover { background: darken($alert, 7%); }
+		&.toggled { background: darken($alert, 10%); box-shadow: 0 3px darken($alert, 24%) inset; }
 	}
 	&.warning {
 		background: $warning;
 		&:hover { background: darken($warning, 7%); }
+		&.toggled { background: darken($warning, 10%); box-shadow: 0 3px darken($warning, 24%) inset; }
 	}
 }
 
@@ -280,7 +297,9 @@ iframe { display: block; max-width: 100%; }
 table {
 	tr {
 		border-bottom: 1px solid #ddd;
+		th { text-align: left; }
 	}
+
 	&.expand { width: 100%; }
 }
 

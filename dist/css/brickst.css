@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.5rem; }
 
 body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
@@ -261,6 +262,12 @@ iframe {
 .clearfix::after {
   clear: both; }
 
+.show-grid {
+  background-image: -webkit-linear-gradient(top, #0ff 0px, rgba(255, 255, 255, 0) 1px);
+  background-image: linear-gradient(to bottom, #0ff 0px, rgba(255, 255, 255, 0) 1px);
+  background-repeat: repeat-y;
+  background-size: 100% 1rem; }
+
 .button, button {
   font-weight: bold;
   text-decoration: none;
@@ -273,6 +280,9 @@ iframe {
   .button:hover, button:hover {
     background: #39639d;
     color: #fff; }
+  .button.toggled, button.toggled {
+    background: #355c92;
+    box-shadow: 0 3px #223b5d inset; }
   .button.tiny, button.tiny {
     padding: 0.3rem 0.7rem;
     font-size: 0.65rem; }
@@ -285,21 +295,34 @@ iframe {
   .button.expand, button.expand {
     width: 100%; }
   .button.secondary, button.secondary {
+    color: #202020;
     background: #DCDDDE; }
     .button.secondary:hover, button.secondary:hover {
       background: #cacbcd; }
+    .button.secondary.toggled, button.secondary.toggled {
+      background: #c2c4c5;
+      box-shadow: 0 3px #9da0a3 inset; }
   .button.success, button.success {
     background: #98C807; }
     .button.success:hover, button.success:hover {
       background: #7ea606; }
+    .button.success.toggled, button.success.toggled {
+      background: #739705;
+      box-shadow: 0 3px #3e5203 inset; }
   .button.alert, button.alert {
     background: #D13814; }
     .button.alert:hover, button.alert:hover {
       background: #b02f11; }
+    .button.alert.toggled, button.alert.toggled {
+      background: #a22c10;
+      box-shadow: 0 3px #611a09 inset; }
   .button.warning, button.warning {
     background: #EF9421; }
     .button.warning:hover, button.warning:hover {
       background: #dc8210; }
+    .button.warning.toggled, button.warning.toggled {
+      background: #ce7a0f;
+      box-shadow: 0 3px #8c520a inset; }
 
 .panel {
   background: #DCDDDE;
@@ -312,6 +335,8 @@ iframe {
 
 table tr {
   border-bottom: 1px solid #ddd; }
+  table tr th {
+    text-align: left; }
 table.expand {
   width: 100%; }
 

@@ -17,9 +17,10 @@
 </head>
 <body>
 
-<div class="row">
-	<div id="content" class="small-9 medium-6 large-8 columns">
-		<h1>BRICKst framework</h1>
+<div class="row show-grid">
+
+	<div id="sidebar" class="small-3 medium-6 large-4 columns">
+		<h1>BRICKst</h1>
 		<blockquote>
 			<q>The first Web brick.</q>
 		</blockquote>
@@ -29,9 +30,34 @@
 		<p>
 			Yes, I know. This "demo" is terrible so far. This will serve a purpose of a demo and documentation at some point in the future. Feel free to skim through <code>dist/css/brickst.scss</code> to discover all the features.
 		</p>
+		<h2>Table of Contents</h2>
+		<ol>
+			<li><a href="#scss-mixins">SCSS Mixins</a></li>
+			<li>
+				<a href="#html">HTML</a>
+				<ol>
+					<li><a href="#grid">Grid</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#panels">Panels</a></li>
+					<li><a href="#visibility">Visibility Classes</a></li>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="#effects">Effects</a></li>
+					<li><a href="#helper">Helper Classes</a></li>
+				</ol>
+			</li>
+			<li>
+				<a href="#examples">Examples</a>
+				<ol>
+					<li><a href="#form">Form</a></li>
+					<li><a href="#responsive-tables">Responsive Tables</a></li>
+				</ul>
+			</li>
+		</ol>
+	</div><!-- #sidebar -->
 
-		<hr>
-		
+
+	<div id="content" class="small-9 medium-6 large-8 columns">
+		<a name="scss-mixins"></a>
 		<h2>SCSS Mixins</h2>
 
 		<h3>Responsivity</h3>
@@ -60,8 +86,10 @@
 
 		<hr>
 
+		<a name="html"></a>
 		<h2>HTML</h2>
 		
+		<a name="grid"></a>
 		<h3>Grid</h3>
 		<p>
 			12-column rows by default, nestable (one level confirmed :)
@@ -73,22 +101,32 @@
 			<li><b>.row.expand</b> – full-width row</li>
 		</ul>
 		
+		<a name="buttons"></a>
 		<h3>Buttons</h3>
 		<p>
-			4 sizes (tiny, small, default and large), 5 variants (default, secondary, success, alert, warning). Use <code>.expand</code> to expand the button to full available width of its container.
+			Classic buttons. Default usage via <code>button</code> and/or <code>a.button</code>:
 		</p>
 		<p>
 			<a href="#" class="tiny button">Tiny Default</a>
+			<a href="#" class="tiny button toggled">Toggled</a>
 			<a href="#" class="small success button">Small Success</a>
 			<a href="#" class="warning button">Warning Button</a>
 			<a href="#" class="large alert button">Large Alert</a>
 		</p>
+		<h4>Optional classes</h4>
+		<ul>
+			<li><strong>.tiny/.small/.large</strong> (or none) – 4 sizes, define via classes</li>
+			<li><strong>.secondary/.success/.alert/.warning</strong> (or none) – 5 variants, different coloring by default</li>
+			<li><strong>.toggled</strong> – makes button toggle-able (useful for playing with JS)</li>
+		</ul>
 		
+		<a name="panels"></a>
 		<h3>Panels</h3>
 		<div class="panel hide-for-small">
 			<p>Simple panels for whatever you want. This panel is <code>.hide-for-small</code>, therefore only visible on medium and large screens.</p>
 		</div>
 		
+		<a name="visibility"></a>
 		<h3>Visibility Classes</h3>
 		<ul>
 			<li><strong>.hide</strong> – hide completely (useful for fiddling with jQuery)</li>
@@ -96,6 +134,7 @@
 			<li><strong>.show-for-small, .show-for-medium, .show-for-large</strong> – explicitly show on specified viewports</li>
 		</ul>
 		
+		<a name="typography"></a>
 		<h3>Typography</h3>
 		<p>
 			All elements, typography included, are reset by <a href="http://git.io/normalize">normalize.css</a> and therefore absolutely bare-bones. Styling is up to you.
@@ -106,18 +145,26 @@
 			<li><strong>.text-right</strong> – align to right</li>
 		</ul>
 
+		<a name="effects"></a>
 		<h3>Effects</h3>
 		<ul>
 			<li><strong>.tfx</strong> – short for "transition effects"; applies 0.3s linear animation to transitions (used on buttons)</li>
 			<li><strong>.zoom</strong> – scale element to 110% by default</li>
 		</ul>
 
+		<a name="helper"></a>
 		<h3>Helper Classes</h3>
 		<ul>
 			<li><strong>.clearfix</strong> – *any comments are futile*</li>
 		</ul>
 
-		<h3>Example form</h3>
+		<hr>
+
+		<a name="examples"></a>
+		<h2>Examples</h2>
+
+		<a name="form"></a>
+		<h3>Form</h3>
 		<form>
 			<div class="row narrow">
 				<div class="large-5 medium-6 columns">
@@ -143,6 +190,7 @@
 			</div>
 		</form>
 
+		<a name="responsive-tables"></a>
 		<h3>Responsive Tables</h3>
 		<p>
 			Wrap 'em in <code>.table</code> for horizontal scrolling, when content doesn't fit the viewport.
@@ -171,14 +219,10 @@
 		</div>
 
 	</div><!-- #content -->
-
-
-	<div id="sidebar" class="small-3 medium-6 large-4 columns">
-		<img src="http://placekitten.com/400/900">
-	</div><!-- #sidebar -->
 </div>
 
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/brickst.js"></script>
+	<script src="dist/js/jquery-1.11.2.min.js"></script>
+	<script src="dist/js/brickst.js"></script>
+	<script src="docs/docs.js"></script>
 </body>
 </html>

@@ -27,15 +27,19 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
     * [ ] offsets
     * [x] centering
     * [ ] nestable (needs fixing)
-* [ ] Better typography (with vertical rhytm and aligned baselines) – [inspiration](https://sassline.com)
+* Typography etc.
+    * [ ] better typography (with vertical rhytm and aligned baselines) – [inspiration](https://sassline.com)
+    * [ ] nested <ol> lists with proper numbering
 * Forms
     * [x] inputs, textareas, ...
     * [ ] input errors/alerts
     * [ ] sample Form code for Docs
 * Addons
     * [ ] basic styles for column highlighting (after grid customization) for easier creation of "guide grid" in Photoshop
-* JS
+* JS (?)
     * [ ] column equalizer – http://css-tricks.com/equal-height-blocks-in-rows/ OR https://github.com/liabru/jquery-match-height
+    * [ ] basic tabs
+    * [ ] accordion
 
 
 ## BRICKst in the Wild
