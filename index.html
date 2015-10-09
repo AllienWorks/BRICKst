@@ -12,7 +12,7 @@
 	<meta property="og:url" content="http://" />
 	<meta property="og:image" content="http://" />
 
-	<link rel="stylesheet" href="css/brickst.css">
+	<link rel="stylesheet" href="dist/css/brickst.css">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 			BRICKst is yet another mobile-first CSS framework for kickstarting your projects. Inspired by ZURB's Foundation (I mean, I pretty much copied their grid solution), OOCSS, SASS amazing powers and more.
 		</p>
 		<p>
-			Yes, I know. This "demo" is terrible so far. This will serve a purpose of a demo and documentation at some point in the future. Feel free to skim through <code>css/brickst.scss</code> to discover all the features.
+			Yes, I know. This "demo" is terrible so far. This will serve a purpose of a demo and documentation at some point in the future. Feel free to skim through <code>dist/css/brickst.scss</code> to discover all the features.
 		</p>
 
 		<hr>
@@ -35,13 +35,26 @@
 
 		<h3>Responsivity</h3>
 		<ul>
-			<li><strong>respond-to(medium/large/hd)</strong> – Foundation-like breakpoints medium/large + custom-made "HD" break</li>
-			<li><strong>respond-from(XX units)</strong> – Custom breakpoints, when default aren't enough (e.g. <code>respond-from(123px)</code>)</li>
+			<li>
+				<strong>@include respond-to(medium/large/hd) { .. }</strong><br>
+				Foundation-like breakpoints medium/large + custom-made "HD" break
+			</li>
+			<li>
+				<strong>@include respond-from(XX units) { .. }</strong><br>
+				Custom breakpoints, when default aren't enough (e.g. <code>respond-from(123px)</code>)
+			</li>
+			<li>
+				<strong>@include orientation(landscape/portrait) { .. }</strong><br>
+				Define media querries for device orientation
+			</li>
 		</ul>
 
 		<h3>Gradients</h3>
 		<ul>
-			<li><strong>gradient($top, $bottom)</strong> – easily create CSS gradients, enter both parameters ("from" and "to" colors); gradient is vertical, top to bottom</li>
+			<li>
+				<strong>@include gradient($top, $bottom)</strong><br>
+				easily create CSS gradients, enter both parameters ("from" and "to" colors); gradient is vertical, top to bottom
+			</li>
 		</ul>
 
 		<hr>

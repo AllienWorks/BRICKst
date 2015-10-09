@@ -18,6 +18,11 @@ a {
   a:focus {
     outline: none; }
 
+h1, h2, h3, h4, h5 {
+  -webkit-font-feature-settings: "dlig", "liga", "kern";
+     -moz-font-feature-settings: "dlig", "liga", "kern";
+          font-feature-settings: "dlig", "liga", "kern"; }
+
 .row {
   width: 100%;
   max-width: 64rem;
@@ -32,8 +37,6 @@ a {
     padding: 0; }
   .row.narrow .column, .row.narrow .columns {
     padding: 0 0.75rem; }
-  .row .row.narrow {
-    margin: 0 -0.75rem; }
 
 .column,
 .columns {
@@ -261,15 +264,14 @@ iframe {
 .button, button {
   font-weight: bold;
   text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
+  color: #fff;
   display: inline-block;
   padding: 0.7rem 1.2rem;
-  border: 3px solid #4374b7;
+  background: #4374b7;
   border-radius: 4px;
-  background: none; }
+  border: none; }
   .button:hover, button:hover {
-    background: #4374b7;
+    background: #39639d;
     color: #fff; }
   .button.tiny, button.tiny {
     padding: 0.3rem 0.7rem;
@@ -283,21 +285,21 @@ iframe {
   .button.expand, button.expand {
     width: 100%; }
   .button.secondary, button.secondary {
-    border-color: #DCDDDE; }
+    background: #DCDDDE; }
     .button.secondary:hover, button.secondary:hover {
-      background: #DCDDDE; }
+      background: #cacbcd; }
   .button.success, button.success {
-    border-color: #98C807; }
+    background: #98C807; }
     .button.success:hover, button.success:hover {
-      background: #98C807; }
+      background: #7ea606; }
   .button.alert, button.alert {
-    border-color: #D13814; }
+    background: #D13814; }
     .button.alert:hover, button.alert:hover {
-      background: #D13814; }
+      background: #b02f11; }
   .button.warning, button.warning {
-    border-color: #EF9421; }
+    background: #EF9421; }
     .button.warning:hover, button.warning:hover {
-      background: #EF9421; }
+      background: #dc8210; }
 
 .panel {
   background: #DCDDDE;
