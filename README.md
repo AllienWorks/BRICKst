@@ -16,11 +16,6 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
 ```index.html``` and other files in root folder are for demo/docs purposes, you can refer to ```index.html``` anytime you need help. Dedicated website with proper docs will come when BRICKst is somehow ready for production.
 
 
-## Licence
-
-Released under [MIT Licence](http://opensource.org/licenses/MIT) | Copyright © 2015 Martin Allien
-
-
 ## Todo/Features
 
 * SCSS
@@ -65,4 +60,9 @@ Donate crypto if you feel fancy:
 
 * [Bitcoin](https://bitcoin.org/en/): ```375iKrMLRcstDqR4g45mZ7ZiVdQSJ68pXB```
 * [ShadowCash](http://aboutshadow.com/): ```SWFjyg5kMzgbKXgydwrf6cy86aXcZpe1LJ```
-* [DogeCoin]: ```DNZzNQ4w2BY87K2ufGU4UJpuJe4jD3cpHR```
+* DogeCoin: ```DNZzNQ4w2BY87K2ufGU4UJpuJe4jD3cpHR```
+
+
+## Licence
+
+Released under [MIT Licence](http://opensource.org/licenses/MIT) | Copyright © 2015 Martin Allien
