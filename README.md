@@ -62,9 +62,11 @@ BRICKst, *your web app's first brick*, was built by **Martin Allien** (and many 
 
 Donate crypto if you feel fancy:
 
-* [Bitcoin](https://bitcoin.org/en/): ```375iKrMLRcstDqR4g45mZ7ZiVdQSJ68pXB```
-* [ShadowCash](http://aboutshadow.com/): ```SWFjyg5kMzgbKXgydwrf6cy86aXcZpe1LJ```
-* DogeCoin: ```DNZzNQ4w2BY87K2ufGU4UJpuJe4jD3cpHR```
+* [Bitcoin](https://bitcoin.org/en): ```1MByfmAdyRFr3qxMh2cspX5RsxS4FKjMmH```
+* [ShadowCash](http://aboutshadow.com): ```SScnhyH7GGH2UxRm4SFZg7epK3yDJA59fb```
+* [Verge](http://vergecurrency.com): ```DBT5xkoy5dbYULkNxezL8FpinyfTvpVeTe```
+* [Blackcoin](http://blackcoin.co): ```B9oLoQMsTCztEbwd9nHQxdJWKuv62aNuze```
+* [Litecoin](https://litecoin.org): ```LQ5AMQDu3BTWHM2VDzyfv8Msej7NrMZLFH```
 
 
 ## Licence
