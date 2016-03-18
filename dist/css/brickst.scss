@@ -22,6 +22,7 @@ $break-medium: 40.063rem;
 // Grid
 $rowWidth: 64rem;
 $gutterWidth: 1.5rem;
+$block-grid-spacing: 0.7rem;
 
 // UI
 $borderRadius: 4px;
@@ -163,6 +164,53 @@ h1, h2, h3, h4, h5 {
 
 	.large-centered { float: none; margin: 0 auto; }
 	.large-uncentered { float: left; margin: 0; }
+}
+
+
+// Block Grid (deeply borrowed from Foundation as well :)
+ul.block-grid-2 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/2); padding: 0 $block-grid-spacing;
+	}
+}
+
+ul.block-grid-3 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/3); padding: 0 $block-grid-spacing;
+	}
+}
+
+ul.block-grid-4 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/4); padding: 0 $block-grid-spacing;
+	}
+}
+
+ul.block-grid-5 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/5); padding: 0 $block-grid-spacing;
+	}
+}
+
+ul.block-grid-6 {
+	@extend .clearfix;
+	margin: 0 -$block-grid-spacing;
+	& > li {
+		display: block; float: left;
+		width: (100%/6); padding: 0 $block-grid-spacing;
+	}
 }
 
 
