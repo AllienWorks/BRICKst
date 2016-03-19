@@ -20,12 +20,12 @@ $break-large: 64.063rem;
 $break-medium: 40.063rem;
 
 // Grid
-$rowWidth: 64rem;
-$gutterWidth: 1.5rem;
+$row-width: 64rem;
+$gutter-width: 1.5rem;
 $block-grid-spacing: 0.7rem;
 
 // UI
-$borderRadius: 4px;
+$border-radius: 4px;
 
 // Typography
 $font: "Open Sans", "Helvetica", "Arial", sans-serif;
@@ -95,18 +95,18 @@ h1, h2, h3, h4, h5 {
 // ------ GRID ------ //
 
 .row { // shamelessly inspired by Foundation
-	width: 100%; max-width: $rowWidth; margin: 0 auto;
+	width: 100%; max-width: $row-width; margin: 0 auto;
 	&:after { clear: both; content: " "; display: table; }
 	&.expand { max-width: 100%; }
 	&.collapse .column,
 	&.collapse .columns { padding: 0; }
 	&.narrow .column,
-	&.narrow .columns { padding: 0 ($gutterWidth / 2); }
+	&.narrow .columns { padding: 0 ($gutter-width / 2); }
 }
 .column,
 .columns {
 	float: left;
-	width: 100%; padding: 0 $gutterWidth;
+	width: 100%; padding: 0 $gutter-width;
 	position: relative;
 	&.end { float: right; }
 }
@@ -237,7 +237,15 @@ label { cursor: pointer; }
 img { max-width: 100%; height: auto; -ms-interpolation-mode: bicubic; }
 iframe { display: block; max-width: 100%; }
 
-
+.video-container { // for widescreen embeded videos (Youtube)
+  width: 100%; height: 0; overflow: hidden;
+  padding-bottom: 56.23%; margin: 3rem 0 4rem;
+  position: relative;
+  iframe, object, embed, video {
+    width: 100%; height: 100%;
+    position: absolute; top: 0;
+  }
+}
 
 
 
@@ -298,7 +306,7 @@ iframe { display: block; max-width: 100%; }
 .button, button {
 	font-weight: bold; text-decoration: none; color: $white;
 	display: inline-block; padding: 0.7rem 1.2rem;
-	background: $primary; border-radius: $borderRadius; border: none;
+	background: $primary; border-radius: $border-radius; border: none;
 	@extend .tfx;
 	&:hover { background: darken($primary, 7%); color: $white; }
 	&.toggled { background: darken($primary, 10%); box-shadow: 0 3px darken($primary, 24%) inset; }
@@ -308,7 +316,7 @@ iframe { display: block; max-width: 100%; }
 	&.small { padding: 0.5rem 0.95rem; font-size: 0.825rem; }
 	&.large { padding: 0.9rem 1.45rem; font-size: 1.125rem; }
 	&.expand { width: 100%; }
-	
+
 	// Button Variants/Mods
 	&.secondary {
 		color: $black;
