@@ -28,7 +28,7 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
     * [x] centering
     * [ ] nestable (needs fixing)
     * [x] block grid
-    * [ ] responsive block grid
+    * [x] responsive block grid
 * Typography etc.
     * [ ] better typography (with vertical rhytm and aligned baselines) – [inspiration](https://sassline.com)
     * [ ] nested <ol> lists with proper numbering

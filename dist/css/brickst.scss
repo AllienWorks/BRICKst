@@ -87,7 +87,6 @@ h1, h2, h3, h4, h5 {
 	background: -o-linear-gradient(top, $top 0%,$bottom 100%);
 	background: -ms-linear-gradient(top, $top 0%,$bottom 100%);
 	background: linear-gradient(to bottom, $top 0%,$bottom 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
 }
 
 
@@ -128,6 +127,21 @@ h1, h2, h3, h4, h5 {
 .small-uncentered { float: left; margin: 0; }
 
 
+// Block grid (https://css-tricks.com/attribute-selectors/)
+[class*="block-grid"] {
+	@extend .clearfix;
+	margin: 0 (-$block-grid-spacing);
+	& > * { display: block; float: left; padding: 0 $block-grid-spacing; }
+}
+.small-block-grid-2 > * { width: (100%/2); }
+.small-block-grid-3 > * { width: (100%/3); }
+.small-block-grid-4 > * { width: (100%/4); }
+.small-block-grid-5 > * { width: (100%/5); }
+.small-block-grid-6 > * { width: (100%/6); }
+.small-block-grid-7 > * { width: (100%/7); }
+.small-block-grid-8 > * { width: (100%/8); }
+
+
 // Medium Grid
 @include respond-to(medium) {
 	.large-1, .large-2, .large-3, .large-4, .large-5, .large-6, .large-7, .large-8, .large-9, .large-10, .large-11, .large-12 { width: 100%; }
@@ -145,6 +159,14 @@ h1, h2, h3, h4, h5 {
 
 	.medium-centered { float: none; margin: 0 auto; }
 	.medium-uncentered { float: left; margin: 0; }
+
+	.medium-block-grid-2 > * { width: (100%/2); }
+	.medium-block-grid-3 > * {	width: (100%/3); }
+	.medium-block-grid-4 > * {	width: (100%/4); }
+	.medium-block-grid-5 > * {	width: (100%/5); }
+	.medium-block-grid-6 > * {	width: (100%/6); }
+	.medium-block-grid-7 > * {	width: (100%/7); }
+	.medium-block-grid-8 > * {	width: (100%/8); }
 }
 
 
@@ -164,56 +186,15 @@ h1, h2, h3, h4, h5 {
 
 	.large-centered { float: none; margin: 0 auto; }
 	.large-uncentered { float: left; margin: 0; }
+
+	.large-block-grid-2 > * { width: (100%/2); }
+	.large-block-grid-3 > * { width: (100%/3); }
+	.large-block-grid-4 > * { width: (100%/4); }
+	.large-block-grid-5 > * { width: (100%/5); }
+	.large-block-grid-6 > * { width: (100%/6); }
+	.large-block-grid-7 > * { width: (100%/7); }
+	.large-block-grid-8 > * { width: (100%/8); }
 }
-
-
-// Block Grid (deeply borrowed from Foundation as well :)
-ul.block-grid-2 {
-	@extend .clearfix;
-	margin: 0 -$block-grid-spacing;
-	& > li {
-		display: block; float: left;
-		width: (100%/2); padding: 0 $block-grid-spacing;
-	}
-}
-
-ul.block-grid-3 {
-	@extend .clearfix;
-	margin: 0 -$block-grid-spacing;
-	& > li {
-		display: block; float: left;
-		width: (100%/3); padding: 0 $block-grid-spacing;
-	}
-}
-
-ul.block-grid-4 {
-	@extend .clearfix;
-	margin: 0 -$block-grid-spacing;
-	& > li {
-		display: block; float: left;
-		width: (100%/4); padding: 0 $block-grid-spacing;
-	}
-}
-
-ul.block-grid-5 {
-	@extend .clearfix;
-	margin: 0 -$block-grid-spacing;
-	& > li {
-		display: block; float: left;
-		width: (100%/5); padding: 0 $block-grid-spacing;
-	}
-}
-
-ul.block-grid-6 {
-	@extend .clearfix;
-	margin: 0 -$block-grid-spacing;
-	& > li {
-		display: block; float: left;
-		width: (100%/6); padding: 0 $block-grid-spacing;
-	}
-}
-
-
 
 
 
