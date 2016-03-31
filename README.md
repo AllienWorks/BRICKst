@@ -31,7 +31,7 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
     * [x] responsive block grid
 * Typography etc.
     * [ ] better typography (with vertical rhytm and aligned baselines) – [inspiration](https://sassline.com)
-    * [ ] nested <ol> lists with proper numbering
+    * [ ] nested ```ol``` lists with proper numbering
 * Forms
     * [x] inputs, textareas, ...
     * [ ] input errors/alerts
@@ -73,4 +73,4 @@ Donate crypto if you feel fancy:
 
 ## Licence
 
-Released under [MIT Licence](http://opensource.org/licenses/MIT) | Copyright © 2015 Martin Allien
+Released under [MIT Licence](http://opensource.org/licenses/MIT) | Copyright © 2016 Martin Allien
