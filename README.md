@@ -28,10 +28,10 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
     * [x] centering
     * [ ] nestable (needs fixing)
     * [x] block grid
-    * [ ] responsive block grid
+    * [x] responsive block grid
 * Typography etc.
     * [ ] better typography (with vertical rhytm and aligned baselines) – [inspiration](https://sassline.com)
-    * [ ] nested <ol> lists with proper numbering
+    * [ ] nested ```ol``` lists with proper numbering
 * Forms
     * [x] inputs, textareas, ...
     * [ ] input errors/alerts
@@ -64,13 +64,15 @@ BRICKst, *your web app's first brick*, was built by **Martin Allien** (and many 
 
 Donate crypto if you feel fancy:
 
-* [Bitcoin](https://bitcoin.org/en): ```1MByfmAdyRFr3qxMh2cspX5RsxS4FKjMmH```
-* [ShadowCash](https://shadowproject.io): ```SScnhyH7GGH2UxRm4SFZg7epK3yDJA59fb```
-* [Verge](http://vergecurrency.com): ```DBT5xkoy5dbYULkNxezL8FpinyfTvpVeTe```
-* [Blackcoin](http://blackcoin.co): ```B9oLoQMsTCztEbwd9nHQxdJWKuv62aNuze```
-* [Litecoin](https://litecoin.org): ```LQ5AMQDu3BTWHM2VDzyfv8Msej7NrMZLFH```
+* [Bitcoin](https://bitcoin.org/en): ```1BY4WaXtLWXAizD51hoYpVF7HEi5nGLk6z```
+* [ShadowCash](http://aboutshadow.com): ```SScnhyH7GGH2UxRm4SFZg7epK3yDJA59fb```
+* [Decred](https://www.decred.org): ```DsYnhbsK1AwDx8AUGmy5BvKn2bbB4PWVv6w```
+* [Ethereum](https://www.ethereum.org): ```0xba356f88f126aa0d0f25ef8a43c9fb19471646f8```
+* [Verge](http://vergecurrency.com): ```DTQnniFjYJUYs1puAFuhEJAYJevP9BTvEt```
+* [Blackcoin](http://blackcoin.co): ```BJjg8cNiDsf66mgw1dga4h37jGA9v5MeNj```
+* [Litecoin](https://litecoin.org): ```LNwiWXK8kb8jVKv9ioVfbiqA4puyBkUXg4```
 
 
 ## Licence
 
-Released under [MIT Licence](http://opensource.org/licenses/MIT) | Copyright © 2015 Martin Allien
+Released under [MIT Licence](http://opensource.org/licenses/MIT) | Copyright © 2016 Martin Allien
