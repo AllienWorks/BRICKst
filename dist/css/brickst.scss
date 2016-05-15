@@ -174,6 +174,7 @@ ul.block-grid-2 {
 	& > li {
 		display: block; float: left;
 		width: (100%/2); padding: 0 $block-grid-spacing;
+		&:nth-of-type(2n+1) { clear: both; }
 	}
 }
 
@@ -183,6 +184,7 @@ ul.block-grid-3 {
 	& > li {
 		display: block; float: left;
 		width: (100%/3); padding: 0 $block-grid-spacing;
+		&:nth-of-type(3n+1) { clear: both; }
 	}
 }
 
@@ -192,6 +194,7 @@ ul.block-grid-4 {
 	& > li {
 		display: block; float: left;
 		width: (100%/4); padding: 0 $block-grid-spacing;
+		&:nth-of-type(4n+1) { clear: both; }
 	}
 }
 
@@ -201,6 +204,7 @@ ul.block-grid-5 {
 	& > li {
 		display: block; float: left;
 		width: (100%/5); padding: 0 $block-grid-spacing;
+		&:nth-of-type(5n+1) { clear: both; }
 	}
 }
 
@@ -210,6 +214,7 @@ ul.block-grid-6 {
 	& > li {
 		display: block; float: left;
 		width: (100%/6); padding: 0 $block-grid-spacing;
+		&:nth-of-type(6n+1) { clear: both; }
 	}
 }
 
