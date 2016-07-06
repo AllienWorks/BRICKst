@@ -133,6 +133,9 @@ h1, h2, h3, h4, h5 {
   margin: 0 (-$block-grid-spacing); padding: 0;
   & > * { display: block; float: left; padding: 0 $block-grid-spacing; }
 }
+.small-block-grid-1 > * {
+	width: 100%; clear: both;
+}
 .small-block-grid-2 > * {
 	width: (100%/2);
 	&:nth-of-type(2n+1) { clear: both; }
@@ -184,6 +187,9 @@ h1, h2, h3, h4, h5 {
   // reset clearfixes from smaller grids
   [class*="small-block-grid"][class*="medium-block-grid"] > * { clear: none; }
 
+  .medium-block-grid-1 > * {
+  	width: 100%; clear: both;
+  }
   .medium-block-grid-2 > * {
   	width: (100%/2);
   	&:nth-of-type(2n+1) { clear: both; }
@@ -236,6 +242,9 @@ h1, h2, h3, h4, h5 {
   [class*="small-block-grid"][class*="large-block-grid"] > * { clear: none; }
   [class*="medium-block-grid"][class*="large-block-grid"] > * { clear: none; }
 
+  .large-block-grid-1 > * {
+  	width: 100%; clear: both;
+  }
   .large-block-grid-2 > * {
   	width: (100%/2);
   	&:nth-of-type(2n+1) { clear: both; }

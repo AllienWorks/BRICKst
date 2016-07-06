@@ -43,15 +43,15 @@
 			"file": "dist/css/brickst.scss",
 			"settings":
 			{
-				"buffer_size": 10819,
+				"buffer_size": 10990,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Remote:   origin @ git@github.com:allienworks/BRICKst.git\nLocal:    master /srv/http/BRICKst\nHead:     85f5b7c block grid fix\n\n\nNothing to commit (working directory clean)\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
+			"contents": "Remote:   origin @ git@github.com:allienworks/BRICKst.git\nLocal:    master /srv/http/BRICKst\nHead:     4b0f0f8 another block grid fix (for small grid)\n\n\nNothing to commit (working directory clean)\n\n# Movement:\n#    r = refresh status\n#    1-5 = jump to section\n#    n = next item, N = next section\n#    p = previous item, P = previous section\n#\n# Staging:\n#    s = stage file/section, S = stage all unstaged files\n#    ctrl+shift+s = stage all unstaged and untracked files\n#    u = unstage file/section, U = unstage all files\n#    backspace = discard file/section, shift+backspace = discard everything\n#\n# Commit:\n#    c = commit, C = commit -a (add unstaged)\n#    ctrl+shift+c = commit --amend (amend previous commit)\n#\n# Other:\n#    i = ignore file, I = ignore pattern\n#    enter = open file\n#    d = view diff\n#\n# Stashes:\n#    a = apply stash, A = pop stash\n#    z = create stash, Z = create stash including untracked files\n#    backspace = discard stash",
 			"settings":
 			{
-				"buffer_size": 933,
+				"buffer_size": 958,
 				"line_ending": "Unix",
 				"name": "*git-status*: BRICKst",
 				"read_only": true,
@@ -538,15 +538,15 @@
 					"file": "dist/css/brickst.scss",
 					"settings":
 					{
-						"buffer_size": 10819,
+						"buffer_size": 10990,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6372,
-								6372
+								6464,
+								6464
 							]
 						],
 						"settings":
@@ -562,7 +562,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2880.0,
+						"translation.y": 2970.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -571,15 +571,15 @@
 					"buffer": 2,
 					"settings":
 					{
-						"buffer_size": 933,
+						"buffer_size": 958,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								330,
-								330
+								153,
+								153
 							]
 						],
 						"settings":
