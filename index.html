@@ -12,7 +12,7 @@
 	<meta property="og:url" content="http://" />
 	<meta property="og:image" content="http://" />
 
-	<link rel="stylesheet" href="dist/css/brickst.css">
+	<link rel="stylesheet" href="dist/css/app.css">
 	<link rel="stylesheet" href="docs/docs.css">
 </head>
 <body>
@@ -63,12 +63,12 @@
 		<h3>Responsivity</h3>
 		<ul>
 			<li>
-				<strong>@include respond-to(medium/large/hd) { .. }</strong><br>
-				Foundation-like breakpoints medium/large + custom-made "HD" break
+				<strong>@include break(s/m/t/l/xl) { .. }</strong><br>
+				Customizable breakpoints S/M/T/L/XL (configure via _config.scss)
 			</li>
 			<li>
-				<strong>@include respond-from(XX units) { .. }</strong><br>
-				Custom breakpoints, when default aren't enough (e.g. <code>respond-from(123px)</code>)
+				<strong>@include break-from(XX units) { .. }</strong><br>
+				Custom breakpoints, when default aren't enough (e.g. <code>break-from(123px)</code>)
 			</li>
 			<li>
 				<strong>@include orientation(landscape/portrait) { .. }</strong><br>
