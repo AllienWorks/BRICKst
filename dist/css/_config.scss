@@ -1,0 +1,28 @@
+
+// Colors
+$primary: #4374b7; // main color (blue by default)
+$secondary: #DCDDDE; // usually grayscale-ish, slightly darked than content background
+$success: #98C807; // greens
+$alert: #D13814; // reds
+$warning: #EF9421; // oranges :)
+$black: #202020;
+$white: #fff;
+
+// Breakpoints
+$break-s: 30rem; // small
+$break-m: 45rem; // medium
+$break-t: 52.5rem; // tablet
+$break-l: 60rem; // large (desktop)
+$break-xl: 75rem; // extra-large
+
+// Grid
+$row-width: 64rem;
+$gutter-width: 1.5rem;
+$block-grid-spacing: 0.7rem;
+
+// UI
+$border-radius: 4px;
+
+// Typography
+$font: "Open Sans", "Helvetica", "Arial", sans-serif;
+$line-height: 1.6;

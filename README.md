@@ -20,7 +20,7 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
 
 * SCSS
     * [ ] Table of Contents
-    * [ ] Split BRICKst into separate _partials (?)
+    * [x] Split BRICKst into separate _partials (?)
 * GRID
     * [x] medium grid
     * [x] small grid
@@ -34,6 +34,7 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
     * [ ] nested ```ol``` lists with proper numbering
 * Forms
     * [x] inputs, textareas, ...
+    * [ ] focus for buttons
     * [ ] input errors/alerts
     * [ ] sample Form code for Docs
 * Addons

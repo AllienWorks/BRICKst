@@ -2,6 +2,6 @@
 
 $( document ).ready(function() {
 
-    // come on in ;)
-	console.log( "ready!" );
+  // ...
+
 });
