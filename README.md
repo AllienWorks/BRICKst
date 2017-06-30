@@ -13,7 +13,7 @@ Homepage & demo in preparation, not available at the moment ([index.html] itself
 
 Download or clone this repo, all the files you need are located in ```dist/``` folder. Copy them over to your project and start building your app with BRICKst.
 
-```index.html``` and other files in root folder are for demo/docs purposes, you can refer to ```index.html``` anytime you need help. Dedicated website with proper docs will come when BRICKst is somehow ready for production.
+`index.html` and other files in root folder are for demo/docs purposes, you can refer to `index.html` anytime you need help. Dedicated website with proper docs will come when BRICKst is somehow ready for production.
 
 
 ## Todo/Features
@@ -49,7 +49,7 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
 
 Some of the sites I know about that are using BRICKst:
 
-* [allienworks.net](https://allienworks.net) – of course I built my site with it ;)
+* [allienworks.net](https://allienworks.net) & [allien.work](https://allien.work) – of course I build my sites with it ;)
 * [TAJP](https://github.com/vincurekf/TAJP) – Angular/JS/PHP starter template by Filip Vincůrek
 * [Cryptocoins](http://labs.allienworks.net/icons/cryptocoins/) – microsite featuring my [cryptocurrency icon pack](https://github.com/allienworks/cryptocoins)
 
@@ -58,20 +58,14 @@ Some of the sites I know about that are using BRICKst:
 
 BRICKst, *your web app's first brick*, was built by **Martin Allien** (and many contributors to ZURB's Foundation, in a sense).
 
-* Website (project base): [allienworks.net](https://allienworks.net)
-* Twitter: [@AllienWorks](https://allienworks.net)
-* Google+: [+AllienWorks](https://google.com/+AllienWorksNet)
-* Keybase (contact me securely): [martin_allien](https://keybase.io/martin_allien) 
+* Website: [allien.work](https://allien.work)
+* Keybase: [martin_allien](https://keybase.io/martin_allien)
 
-Donate crypto if you feel fancy:
+[Tip me crypto](https://allien.work/donate) and **support further development**!
 
-* [Bitcoin](https://bitcoin.org/en): ```1BY4WaXtLWXAizD51hoYpVF7HEi5nGLk6z```
-* [ShadowCash](http://aboutshadow.com): ```SScnhyH7GGH2UxRm4SFZg7epK3yDJA59fb```
-* [Decred](https://www.decred.org): ```DsYnhbsK1AwDx8AUGmy5BvKn2bbB4PWVv6w```
-* [Ethereum](https://www.ethereum.org): ```0xba356f88f126aa0d0f25ef8a43c9fb19471646f8```
-* [Verge](http://vergecurrency.com): ```DTQnniFjYJUYs1puAFuhEJAYJevP9BTvEt```
-* [Blackcoin](http://blackcoin.co): ```BJjg8cNiDsf66mgw1dga4h37jGA9v5MeNj```
-* [Litecoin](https://litecoin.org): ```LNwiWXK8kb8jVKv9ioVfbiqA4puyBkUXg4```
+Follow for updates and more stuff:
+
+* Twitter: [@AllienWorks](https://twitter.com/AllienWorks)
 
 
 ## Licence

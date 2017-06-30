@@ -1,4 +1,4 @@
-@import 'normalize.css';
+@import '_normalize';
 
 /*! BRICKst v1.0.0 | MIT License | allienworks.net */
 
@@ -161,7 +161,6 @@ table {
     border-bottom: 1px solid #ddd;
     th { text-align: left; }
   }
-
   &.expand { width: 100%; }
 }
 

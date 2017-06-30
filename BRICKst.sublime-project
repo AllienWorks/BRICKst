@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/xxx/Localhost/_archiv/cryptocoins"
 		}
 	]
 }

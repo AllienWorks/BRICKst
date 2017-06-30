@@ -1,28 +1,29 @@
 
 // Colors
-$primary: #4374b7; // main color (blue by default)
-$secondary: #DCDDDE; // usually grayscale-ish, slightly darked than content background
-$success: #98C807; // greens
-$alert: #D13814; // reds
-$warning: #EF9421; // oranges :)
-$black: #202020;
-$white: #fff;
+$primary: #4374b7 !default; // main color (blue by default)
+$secondary: #DCDDDE !default; // usually grayscale-ish, slightly darked than content background
+$success: #98C807 !default; // greens
+$alert: #D13814 !default; // reds
+$warning: #EF9421 !default; // oranges :)
+$black: #202020 !default;
+$white: #fff !default;
 
 // Breakpoints
-$break-s: 30rem; // small
-$break-m: 45rem; // medium
-$break-t: 52.5rem; // tablet
-$break-l: 60rem; // large (desktop)
-$break-xl: 75rem; // extra-large
+$break-xs: 25rem !default; // small
+$break-s: 30rem !default; // small
+$break-m: 45rem !default; // medium
+$break-t: 52.5rem !default; // tablet
+$break-l: 60rem !default; // large (desktop)
+$break-xl: 75rem !default; // extra-large
 
 // Grid
-$row-width: 64rem;
-$gutter-width: 1.5rem;
-$block-grid-spacing: 0.7rem;
+$row-width: 64rem !default;
+$gutter-width: 1.5rem !default;
+$block-grid-spacing: 0.7rem !default;
 
 // UI
-$border-radius: 4px;
+$border-radius: 4px !default;
 
 // Typography
-$font: "Open Sans", "Helvetica", "Arial", sans-serif;
-$line-height: 1.6;
+$font: "Open Sans", "Helvetica", "Arial", sans-serif !default;
+$line-height: 1.4 !default;
