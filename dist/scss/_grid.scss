@@ -36,7 +36,7 @@
 
 // Block grid (https://css-tricks.com/attribute-selectors/)
 [class*="block-grid"] {
-  @extend .clearfix;
+  @extend %clearfix;
   margin: 0 (-$block-grid-spacing); padding: 0;
   & > * { display: block; float: left; padding: 0 $block-grid-spacing; }
 }
