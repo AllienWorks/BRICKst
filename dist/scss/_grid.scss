@@ -1,4 +1,4 @@
-/* BRICKst - grid */
+/* BRICKst - Grid */
 
 .row { // shamelessly inspired by Foundation
   width: 100%; max-width: $row-width; margin: 0 auto;
@@ -17,16 +17,26 @@
   &.end { float: right; }
 }
 
-// Small Grid
+
+// ----- SMALL GRID ----- //
+
+// Small classic Grid
 @for $i from 1 through 11 {
-  .small-#{$i} { width: 100% / 12 * $i; }
+  // Classic Grid
+  .small-#{$i} { width: (100% / 12 * $i); }
+
+  // Column Offsets
+  .small-offset-#{$i} { margin-left: (100% / 12 * $i); }
+
+  // Source Ordering
+  .small-push-#{$i} { left: (100% / 12 * $i); }
+  .small-pull-#{$i} { right: (100% / 12 * $i); }
 }
 
 .small-centered { float: none; margin: 0 auto; }
 .small-uncentered { float: left; margin: 0; }
 
-
-// Block grid (https://css-tricks.com/attribute-selectors/)
+// Small Block Grid
 [class*="block-grid"] {
   @extend %clearfix;
   margin: 0 (-$block-grid-spacing); padding: 0;
@@ -40,18 +50,28 @@
 }
 
 
-// Medium Grid
+// ----- MEDIUM GRID ----- //
+
 @include break(m) {
   [class*="large-"] { width: 100%; }
 
+  // Medium classic Grid
   @for $i from 1 through 11 {
+    // Classic Grid
     .medium-#{$i} { width: (100% / 12 * $i); }
+
+    // Column Offsets
+    .medium-offset-#{$i} { margin-left: (100% / 12 * $i); }
+
+    // Source Ordering
+    .medium-push-#{$i} { left: (100% / 12 * $i); }
+    .medium-pull-#{$i} { right: (100% / 12 * $i); }
   }
 
   .medium-centered { float: none; margin: 0 auto; }
   .medium-uncentered { float: left; margin: 0; }
 
-  // reset clearfixes from smaller grids
+  // Medium block Grid
   [class*="small-block-grid"][class*="medium-block-grid"] > * { clear: none; }
 
   @for $i from 1 through 8 {
@@ -60,19 +80,29 @@
       &:nth-of-type(2n+#{$i}) { clear: both; }
     }
   }
-}
+} // break(m)
 
 
-// Large Grid
+// ----- LARGE GRID ----- //
+
 @include break(l) {
+
   @for $i from 1 through 11 {
+    // Classic Grid
     .large-#{$i} { width: (100% / 12 * $i); }
+
+    // Column Offsets
+    .large-offset-#{$i} { margin-left: (100% / 12 * $i); }
+
+    // Source Ordering
+    .large-push-#{$i} { left: (100% / 12 * $i); }
+    .large-pull-#{$i} { right: (100% / 12 * $i); }
   }
 
   .large-centered { float: none; margin: 0 auto; }
   .large-uncentered { float: left; margin: 0; }
-
-  // reset clearfixes from smaller grids
+  
+  // Large Block Grid
   [class*="small-block-grid"][class*="large-block-grid"] > * { clear: none; }
   [class*="medium-block-grid"][class*="large-block-grid"] > * { clear: none; }
 
@@ -82,4 +112,5 @@
       &:nth-of-type(2n+#{$i}) { clear: both; }
     }
   }
-}
+
+} // break(l)
