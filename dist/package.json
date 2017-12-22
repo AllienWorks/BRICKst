@@ -1,0 +1,28 @@
+{
+  "name": "brickst",
+  "version": "0.2.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allienworks/BRICKst.git"
+  },
+  "author": "Martin Allien",
+  "license": "MIT",
+  "homepage": "https://github.com/allienworks/BRICKst/blob/master/README.md",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.0.1",
+    "pump": "^1.0.2"
+  },
+  "browserslist": [
+    "> 0.01%"
+  ]
+}

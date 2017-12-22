@@ -15,6 +15,12 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
 
 `index.html` and other files in root folder are for demo/docs purposes, you can refer to `index.html` anytime you need help. Dedicated website with proper docs will come when BRICKst is somehow ready for production.
 
+## Development
+
+1. copy the `dist/` folder to your project
+2. `npm install` to fetch dependencies
+3. `gulp watch` for development compilations
+4. `gulp build` for one-time compilation
 
 ## Todo/Features
 
