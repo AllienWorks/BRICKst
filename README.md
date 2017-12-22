@@ -20,6 +20,11 @@ Download or clone this repo. Copy the files over to your project and start build
 1. copy the files to your project
 2. `npm install` to fetch dependencies
 3. `gulp watch` for development compilations; starts live reloading server via BrowserSync (browse to http://localhost:3000)
+    - compiles SCSS from `scss/`
+    - uglyfies & minifies JS from `js/src/`
+    - adds sourcemaps to both ^
+    - optimizes SVGs in `img/icons`
+    - generates webfont icons from ^ to `fonts/`
 4. `gulp build` for one-time compilation
 
 ## Todo/Features

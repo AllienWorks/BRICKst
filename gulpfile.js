@@ -19,6 +19,13 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 // Sourcemaps - https://github.com/gulp-sourcemaps/gulp-sourcemaps
 var sourcemaps = require('gulp-sourcemaps');
+// SVGO - https://www.npmjs.com/package/gulp-svgmin
+var svgmin = require('gulp-svgmin');
+// Iconfont - https://github.com/nfroidure/gulp-iconfont
+var iconfont = require('gulp-iconfont');
+// Iconfont CSS - https://github.com/backflip/gulp-iconfont-css
+var iconfontCss = require('gulp-iconfont-css');
+
 
 /* ------------------------------------ *\
     Paths
@@ -35,6 +42,10 @@ const paths = {
   js: 'js/src/',
   js_in: 'js/src/**/*.js',
   js_out: 'js',
+  // iconfont
+  ico_input: 'img/icons/**/*.svg',
+  ico_output: 'img/icons/',
+  font_output: 'fonts/',
 }
 
 
@@ -90,16 +101,52 @@ gulp.task('browserSync', function() {
 });
 
 
+// Optimize SVGs
+gulp.task('optimize', function (cb) {
+  console.log('-- Optimizing SVG files');
+  pump([
+    gulp.src(paths.ico_input),
+    svgmin(),
+    gulp.dest(paths.ico_output),
+  ], cb );
+});
+
+
+// Generate iconfont from SVG icons
+gulp.task('webfont', ['optimize'], function (cb) {
+  console.log('-- Generating webfont');
+  pump([
+    gulp.src(paths.ico_input),
+    iconfontCss({
+      fontName: 'icons',
+      fontPath: '../fonts/',
+      targetPath: '../scss/_icons.scss',
+      cssClass: 'ico'
+    }),
+    iconfont({
+      fontName: 'icons',
+      prependUnicode: true,
+      formats: ['ttf', 'eot', 'woff', 'woff2'],
+      normalize: true,
+      fontHeight: 1001,
+      descent: 140,
+     }),
+    gulp.dest(paths.font_output),
+  ], cb );
+});
+
+
 // Watch for Sass/JS changes and compile + BrowserSync
 //gulp.task('watch', ['browserSync', 'sass'], function () {
-gulp.task('watch', ['browserSync', 'sass', 'scripts'], function () {
+gulp.task('watch', ['browserSync', 'sass', 'scripts', 'webfont'], function () {
   gulp.watch(paths.scss, ['sass']);
   gulp.watch(paths.js_in, ['scripts']);
+  gulp.watch(paths.ico_input, ['webfont']);
   gulp.watch(paths.template, browserSync.reload); 
 });
 
 // Manual build (Sass compiling, JS concat/uglify)
-gulp.task('build', ['sass', 'scripts'], function (){
+gulp.task('build', ['sass', 'scripts', 'webfont'], function (){
   console.log('-- Building files');
 });
 
