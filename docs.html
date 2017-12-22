@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>BRICKst – The first Web brick</title>
+	<!-- Open:Graph | http://ogp.me -->
+	<meta property="og:title" content="BRICKst – The first Web brick" />
+	<meta property="og:description" content="BRICKst is yet another mobile-first CSS framework for kickstarting your projects. Inspired by ZURB's Foundation (I mean, I pretty much copied their grid solution), OOCSS, SASS amazing powers and more." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://" />
+	<meta property="og:image" content="http://" />
+
+	<link rel="stylesheet" href="dist/css/app.css">
+	<link rel="stylesheet" href="docs/docs.css">
+</head>
+<body>
+
+<div class="row">
+
+	<div id="sidebar" class="small-3 medium-6 large-4 columns">
+		<h1>BRICKst</h1>
+		<blockquote>
+			<q>The first Web brick.</q>
+		</blockquote>
+		<p class="lead">
+			BRICKst is yet another mobile-first CSS framework for kickstarting your projects. Inspired by ZURB's Foundation (I mean, I pretty much copied their grid solution), OOCSS, SASS amazing powers and more.
+		</p>
+		<p>
+			Yes, I know. This "demo" is terrible so far. This will serve a purpose of a demo and documentation at some point in the future. Feel free to skim through <code>dist/css/brickst.scss</code> to discover all the features.
+		</p>
+		<h2>Table of Contents</h2>
+		<ol>
+			<li><a href="#scss-mixins">SCSS Mixins</a></li>
+			<li>
+				<a href="#html">HTML</a>
+				<ol>
+					<li><a href="#grid">Grid</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#panels">Panels</a></li>
+					<li><a href="#visibility">Visibility Classes</a></li>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="#effects">Effects</a></li>
+					<li><a href="#helper">Helper Classes</a></li>
+				</ol>
+			</li>
+			<li>
+				<a href="#examples">Examples</a>
+				<ol>
+					<li><a href="#form">Form</a></li>
+					<li><a href="#responsive-tables">Responsive Tables</a></li>
+				</ul>
+			</li>
+		</ol>
+	</div><!-- #sidebar -->
+
+
+	<div id="content" class="small-9 medium-6 large-8 columns">
+		<a name="scss-mixins"></a>
+		<h2>SCSS Mixins</h2>
+
+		<h3>Responsivity</h3>
+		<ul>
+			<li>
+				<strong>@include break(s/m/t/l/xl) { .. }</strong><br>
+				Customizable breakpoints S/M/T/L/XL (configure via _config.scss)
+			</li>
+			<li>
+				<strong>@include break-from(XX units) { .. }</strong><br>
+				Custom breakpoints, when default aren't enough (e.g. <code>break-from(123px)</code>)
+			</li>
+			<li>
+				<strong>@include orientation(landscape/portrait) { .. }</strong><br>
+				Define media querries for device orientation
+			</li>
+		</ul>
+
+		<h3>Gradients</h3>
+		<ul>
+			<li>
+				<strong>@include gradient($top, $bottom)</strong><br>
+				easily create CSS gradients, enter both parameters ("from" and "to" colors); gradient is vertical, top to bottom
+			</li>
+		</ul>
+
+		<hr>
+
+		<a name="html"></a>
+		<h2>HTML</h2>
+		
+		<a name="grid"></a>
+		<h3>Grid</h3>
+		<p>
+			12-column rows by default, nestable (one level confirmed :)
+		</p>
+		<ul>
+			<li><b>.row</b> – classic row with max-width defined</li>
+			<li><b>.row.narrow</b> – row with smaller gutters between columns (by half)</li>
+			<li><b>.row.collapse</b> – no gutters between columns at all</li>
+			<li><b>.row.expand</b> – full-width row</li>
+		</ul>
+
+		<h4>Block Grid</h4>
+		<p>
+			Block grid (<code>ul</code>, <code>div</code> or any other element) automatically scales and lay out its children elements (<code>li</code>, <code>div</code> or whatever..) to same-width columns. Available in 2–8 columns so far (you can easily add more).
+		</p>
+		<ul>
+			<li><b>ul.block-grid-2/3/4/5/6/7/8</b> – define number of columns in parent element</li>
+		</ul>
+		
+		<a name="buttons"></a>
+		<h3>Buttons</h3>
+		<p>
+			Classic buttons. Default usage via <code>button</code> and/or <code>a.button</code>:
+		</p>
+		<p>
+			<a href="#" class="tiny button">Tiny Default</a>
+			<a href="#" class="tiny button toggled">Toggled</a>
+			<a href="#" class="small success button">Small Success</a>
+			<a href="#" class="warning button">Warning Button</a>
+			<a href="#" class="large alert button">Large Alert</a>
+		</p>
+		<h4>Optional classes</h4>
+		<ul>
+			<li><strong>.tiny/.small/.large</strong> (or none) – 4 sizes, define via classes</li>
+			<li><strong>.secondary/.success/.alert/.warning</strong> (or none) – 5 variants, different coloring by default</li>
+			<li><strong>.toggled</strong> – makes button toggle-able (useful for playing with JS)</li>
+		</ul>
+		
+		<a name="panels"></a>
+		<h3>Panels</h3>
+		<div class="panel hide-for-small">
+			<p>Simple panels for whatever you want. This panel is <code>.hide-for-small</code>, therefore only visible on medium and large screens.</p>
+		</div>
+		
+		<a name="visibility"></a>
+		<h3>Visibility Classes</h3>
+		<ul>
+			<li><strong>.hide</strong> – hide completely (useful for fiddling with jQuery)</li>
+			<li><strong>.hide-for-small, .hide-for-medium, .hide-for-large</strong> – hide for specific viewports</li>
+			<li><strong>.show-for-small, .show-for-medium, .show-for-large</strong> – explicitly show on specified viewports</li>
+		</ul>
+		
+		<a name="typography"></a>
+		<h3>Typography</h3>
+		<p>
+			All elements, typography included, are reset by <a href="http://git.io/normalize">normalize.css</a> and therefore absolutely bare-bones. Styling is up to you.
+		</p>
+		<ul>
+			<li><strong>.text-left</strong> – align text to left</li>
+			<li><strong>.text-center</strong> – center text</li>
+			<li><strong>.text-right</strong> – align to right</li>
+		</ul>
+
+		<a name="effects"></a>
+		<h3>Effects</h3>
+		<ul>
+			<li><strong>.tfx</strong> – short for "transition effects"; applies 0.3s linear animation to transitions (used on buttons)</li>
+			<li><strong>.zoom</strong> – scale element to 110% by default</li>
+		</ul>
+
+		<a name="helper"></a>
+		<h3>Helper Classes</h3>
+		<ul>
+			<li><strong>.clearfix</strong> – *any comments are futile*</li>
+			<li><strong>.video-container</strong> – responsive container for widescreen Youtube videos (accepted children elements are <code>iframe</code>, <code>object</code>, <code>embed</code> and <code>video</code>)</li>
+		</ul>
+
+		<hr>
+
+		<a name="examples"></a>
+		<h2>Examples</h2>
+
+		<a name="form"></a>
+		<h3>Form</h3>
+		<form>
+			<div class="row narrow">
+				<div class="large-5 medium-6 columns">
+					<label>Name
+						<input type="text" placeholder="Name">
+					</label>
+				</div>
+				<div class="large-7 medium-6 columns">
+					<label>Surname
+						<input type="text" placeholder="Surame">
+					</label>
+				</div>
+			</div>
+			<div class="row narrow">
+				<div class="large-8 columns">
+					<label>Password
+						<input type="password" placeholder="Password">
+					</label>
+				</div>
+				<div class="large-4 columns">
+					<br><button type="submit" class="small expand">Yo.</button>
+				</div>
+			</div>
+		</form>
+
+		<a name="responsive-tables"></a>
+		<h3>Responsive Tables</h3>
+		<p>
+			Wrap 'em in <code>.table</code> for horizontal scrolling, when content doesn't fit the viewport.
+		</p>
+		<div class="table">
+			<table>
+				<tr>
+					<th></th>
+					<th>#1</th>
+					<th>#2</th>
+					<th>#3</th>
+				</tr>
+				<tr>
+					<td>Lorem #1</td>
+					<td>Lorem ipsum dolor sit amet, consectetur.</td>
+					<td>Lorem ipsum.</td>
+					<td>Lorem ipsum dolor sit amet.</td>
+				</tr>
+				<tr>
+					<td>Lorem #2</td>
+					<td>Lorem ipsum dolor sit amet, consectetur.</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+					<td>Lorem.</td>
+				</tr>
+			</table>
+		</div>
+
+	</div><!-- #content -->
+</div>
+
+	<script src="dist/js/jquery-1.11.2.min.js"></script>
+	<script src="dist/js/brickst.js"></script>
+	<script src="docs/docs.js"></script>
+</body>
+</html>

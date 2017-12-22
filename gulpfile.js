@@ -15,6 +15,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 // JS Uglyfy - https://www.npmjs.com/package/gulp-uglify
 var uglify = require('gulp-uglify');
+// BrowserSync - https://www.browsersync.io
+var browserSync = require('browser-sync').create();
 // Sourcemaps - https://github.com/gulp-sourcemaps/gulp-sourcemaps
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -24,8 +26,12 @@ var sourcemaps = require('gulp-sourcemaps');
 \* ------------------------------------ */
 
 const paths = {
+  // templates
+  template: '**/*.html',
+  // CSS
   scss: 'scss/**/*.scss',
   css: 'css',
+  // JS
   js: 'js/src/',
   js_in: 'js/src/**/*.js',
   js_out: 'js',
@@ -48,6 +54,9 @@ gulp.task('sass', function (cb) {
     }),
     sourcemaps.write(''),
     gulp.dest(paths.css),
+    browserSync.reload({
+      stream: true
+    }),
   ], cb );
 });
 
@@ -64,10 +73,13 @@ gulp.task('scripts', function (cb) {
     uglify(),
     sourcemaps.write(''),
     gulp.dest(paths.js_out),
+    browserSync.reload({
+      stream: true
+    }),
   ], cb );
 });
 
-/*
+
 // Launch BrowserSync server
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -76,14 +88,14 @@ gulp.task('browserSync', function() {
     },
   })
 });
-*/
+
 
 // Watch for Sass/JS changes and compile + BrowserSync
 //gulp.task('watch', ['browserSync', 'sass'], function () {
-gulp.task('watch', ['sass', 'scripts'], function () {
+gulp.task('watch', ['browserSync', 'sass', 'scripts'], function () {
   gulp.watch(paths.scss, ['sass']);
   gulp.watch(paths.js_in, ['scripts']);
-  //gulp.watch(paths.template, browserSync.reload); 
+  gulp.watch(paths.template, browserSync.reload); 
 });
 
 // Manual build (Sass compiling, JS concat/uglify)

@@ -11,15 +11,15 @@ Homepage & demo in preparation, not available at the moment ([index.html] itself
 
 ## Installation & Usage
 
-Download or clone this repo, all the files you need are located in ```dist/``` folder. Copy them over to your project and start building your app with BRICKst.
+Download or clone this repo. Copy the files over to your project and start building your app with BRICKst.
 
-`index.html` and other files in root folder are for demo/docs purposes, you can refer to `index.html` anytime you need help. Dedicated website with proper docs will come when BRICKst is somehow ready for production.
+`docs.html` is included with references to implemented features and example layouts. Dedicated website with proper docs will come when BRICKst is somehow ready for production.
 
 ## Development
 
-1. copy the `dist/` folder to your project
+1. copy the files to your project
 2. `npm install` to fetch dependencies
-3. `gulp watch` for development compilations
+3. `gulp watch` for development compilations; starts live reloading server via BrowserSync (browse to http://localhost:3000)
 4. `gulp build` for one-time compilation
 
 ## Todo/Features
@@ -37,7 +37,7 @@ Download or clone this repo, all the files you need are located in ```dist/``` f
     * [x] responsive block grid
 * Typography etc.
     * [ ] better typography (with vertical rhytm and aligned baselines) – [inspiration](https://sassline.com)
-    * [ ] nested ```ol``` lists with proper numbering
+    * [ ] nested `ol` lists with proper numbering
 * Forms
     * [x] inputs, textareas, ...
     * [ ] focus for buttons
