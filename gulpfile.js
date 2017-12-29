@@ -76,7 +76,9 @@ gulp.task('sass', function (cb) {
 gulp.task('scripts', function (cb) {
   pump([
     gulp.src([
+      paths.js + 'modernizr.min.js',
       paths.js + 'jquery-1.11.2.min.js',
+      paths.js + 'off-canvas-menu.js',
       paths.js + 'brickst.js',
     ]),
     sourcemaps.init(),

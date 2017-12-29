@@ -54,6 +54,7 @@ Download or clone this repo. Copy the files over to your project and start build
     * [ ] column equalizer – http://css-tricks.com/equal-height-blocks-in-rows/ OR https://github.com/liabru/jquery-match-height
     * [ ] basic tabs
     * [ ] accordion
+    * [x] responsive off-canvas menu (JS optional) by David Bushell (http://dbushell.com)
 
 
 ## BRICKst in the Wild
