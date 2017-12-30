@@ -1,24 +1,12 @@
-// -----------------[ CONFIG ]----------------- //
-
-$bg: #333;
-$bg-hover: #444;
-
-$off-canvas-break: m; // breakpoint for off-canvas trigger
-$off-canvas-width: 70%;
-
 // ------------------[ BASE ]------------------ //
 
-html {
-  font-size: 16px;
-}
 body {
-  color: #333;
-	position: relative;
-	width: 100%; min-width: 20rem; // 320px
-	background: $bg;
+  position: relative;
+  width: 100%; min-width: 20rem; // 320px
+  background: $offcanvas-bg;
 }
 
-ul, ol {
+#nav ul {
   padding: 0;
   list-style: none;
 }
@@ -27,21 +15,17 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 
 // -----------------[ LAYOUT ]----------------- //
 
 .sidebar {
-  @include break($off-canvas-break) {
+  @include break($offcanvas-break) {
     float: left; width: 30%;
   }
 }
 
 #main {
-  @include break($off-canvas-break) {
+  @include break($offcanvas-break) {
     float: left; width: 65%; margin-left: 5%;
   }
 }
@@ -57,7 +41,7 @@ a {
   position: relative;
   width: 100%;
   .js-ready & { left: 0; }
-  .js-nav & { left: $off-canvas-width; }
+  .js-nav & { left: $offcanvas-width; }
   .csstransforms3d.csstransitions.js-ready & {
     left: 0 !important;
 		transform: translate3d(0,0,0);
@@ -65,8 +49,8 @@ a {
 		backface-visibility: hidden;
   }
   .csstransforms3d.csstransitions.js-nav & {
-    transform: translate3d($off-canvas-width,0,0) scale3d(1,1,1);
-    @include break($off-canvas-break) { transform: none; transition: none; }
+    transform: translate3d($offcanvas-width,0,0) scale3d(1,1,1);
+    @include break($offcanvas-break) { transform: none; transition: none; }
   }
 }
 
@@ -76,7 +60,7 @@ a {
 	background-size: 1.875rem 1.875rem; border: 0;
 	text-indent: 100%;
 	overflow: hidden;	white-space: nowrap;
-	outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none; -webkit-tap-highlight-color: rgba($color-black, 0);
 	&:hover,
 	&:focus { opacity: 1; }
 }
@@ -86,8 +70,8 @@ a {
 
 #top { // site header (title and menu button on mobile)
   position: relative; z-index: 100;
-	color: #fff;
-  background: $bg;
+	color: $color-white;
+  background: $offcanvas-bg;
   padding: 1.5rem 1rem;
   .block-title {
 		margin: 0;
@@ -95,11 +79,11 @@ a {
 	}
   .nav-btn { // off-canvas open button
     position: absolute; top: pem(24); left: pem(30);
-    background: $bg url("../img/nav-icon.svg") left center no-repeat;
+    background: $offcanvas-bg url("../img/nav-icon.svg") left center no-repeat;
     opacity: 0.7;
     // fallback for browsers not supporting SVG
     .no-svg & { background-image: url("../img/nav-icon.png"); }
-    @include break($off-canvas-break) { @include visuallyhidden; }
+    @include break($offcanvas-break) { @include visuallyhidden; }
   }
 }
 
@@ -110,21 +94,21 @@ a {
 	position: absolute; top: 0; z-index: 200;
 	overflow: hidden;
 	width: 100%; padding-top: pem(84);
-	color: #fff;
-  background: $bg;
-  @include break($off-canvas-break) { position: relative; padding-top: 0; }
+	color: $color-white;
+  background: $offcanvas-bg;
+  @include break($offcanvas-break) { position: relative; padding-top: 0; }
   &:not(:target) {
     z-index: 1; height: 0;
-    @include break($off-canvas-break) { height: auto; }
+    @include break($offcanvas-break) { height: auto; }
   }
   &:target {
     .close-btn { display: block; }
   }
   .js-ready & {
-		width: $off-canvas-width; height: 100%;
-		left: (0 - $off-canvas-width);
-		background: $bg; box-shadow: inset pem(-24) 0 pem(24) pem(-12) rgba(0,0,0, 0.25);
-    @include break($off-canvas-break) {
+		width: $offcanvas-width; height: 100%;
+		left: (0 - $offcanvas-width);
+		background: $offcanvas-bg; box-shadow: inset pem(-24) 0 pem(24) pem(-12) rgba($color-black, 0.25);
+    @include break($offcanvas-break) {
       width: auto; height: auto;
       left: auto;
       box-shadow: none;
@@ -141,13 +125,13 @@ a {
     left: 0;
 		transform: translate3d(-100%,0,0);
     backface-visibility: hidden;
-    @include break($off-canvas-break) { transform: translate3d(0,0,0); }
+    @include break($offcanvas-break) { transform: translate3d(0,0,0); }
     .block {
 			opacity: 0.7;
 			transition: opacity 300ms 100ms ease, transform 500ms ease;
-			transform: translate3d($off-canvas-width,0,0) scale3d(0.9,0.9,0.9);
+			transform: translate3d($offcanvas-width,0,0) scale3d(0.9,0.9,0.9);
       transform-origin: 50%, 0%;
-      @include break($off-canvas-break) {
+      @include break($offcanvas-break) {
         opacity: 1;
         transform: translate3d(0,0,0) scale3d(1,1,1);
         transition: none;
@@ -158,15 +142,15 @@ a {
     .block {
 			opacity: 1;
       transform: translate3d(0,0,0);
-      @include break($off-canvas-break) {}
+      @include break($offcanvas-break) {}
 		}
   }
 
   .close-btn { // off-canvas close button
-    background: $bg url("../img/close-btn.svg") left center no-repeat; 
+    background: $offcanvas-bg url("../img/close-btn.svg") left center no-repeat; 
     position: absolute; top: pem(-60); left: pem(30);
     opacity: 1;
-    @include break($off-canvas-break) { @include visuallyhidden; }
+    @include break($offcanvas-break) { @include visuallyhidden; }
     // fallback for browsers not supporting SVG
     .no-svg & { background-image: url("../img/close-btn.png"); }
   }
@@ -196,14 +180,14 @@ a {
         position: absolute; top: 50%; right: pem(-0.5); z-index: 50;
         border-top: pem(10) transparent solid;
         border-bottom: pem(10) transparent solid;
-        border-right: pem(10) #fff solid;
+        border-right: pem(10) $color-white solid;
       }
       a {
         display: block; padding: pem(12, 14) pem(30, 14);
-        color: #ccc;
+        color: $color-white;
         outline: none;
         &:focus,
-        &:hover { color: #fff; background: $bg-hover; }
+        &:hover { background: $offcanvas-bg-hover; }
       }
     }
 	}
@@ -213,7 +197,7 @@ a {
 // --------------[ MAIN CONTENT ]-------------- //
 
 #main { // main content
-	background: #fff;
+	background: $color-white;
 	.block {
 		padding: pem(42) pem(30);
 	}
@@ -223,5 +207,5 @@ a {
 // -----------------[ FOOTER ]----------------- //
 
 footer[role="contentinfo"] {
-	background: #ddd;
+	background: $bg;
 }

@@ -6,8 +6,8 @@
 html { font-size: 16px; line-height: $line-height; }
 body { font-family: $font; cursor: default; }
 a {
-  text-decoration: none; color: $primary;
-  &:hover { color: darken($primary, 10%); }
+  text-decoration: none; color: $color;
+  &:hover { color: darken($color, 10%); }
   &:focus { outline: none; }
 }
 
@@ -100,12 +100,12 @@ iframe { display: block; max-width: 100%; }
 // ------ UI ELEMENTS ------ //
 
 .button, button {
-  font-weight: bold; text-decoration: none; color: $white;
+  font-weight: bold; text-decoration: none; color: $color-white;
   display: inline-block; padding: 0.7rem 1.2rem;
-  background: $primary; border-radius: $border-radius; border: none;
+  background: $color; border-radius: $border-radius; border: none;
   @extend .tfx;
-  &:hover { background: darken($primary, 7%); color: $white; }
-  &.toggled { background: darken($primary, 10%); box-shadow: 0 3px darken($primary, 24%) inset; }
+  &:hover { background: darken($color, 7%); color: $color-white; }
+  &.toggled { background: darken($color, 10%); box-shadow: 0 3px darken($color, 24%) inset; }
 
   // Button Sizes
   &.tiny { padding: 0.3rem 0.7rem; font-size: 0.65rem; }
@@ -115,30 +115,30 @@ iframe { display: block; max-width: 100%; }
 
   // Button Variants/Mods
   &.secondary {
-    color: $black;
-    background: $secondary;
-    &:hover { background: darken($secondary, 7%); }
-    &.toggled { background: darken($secondary, 10%); box-shadow: 0 3px darken($secondary, 24%) inset; }
+    color: $color-black;
+    background: $color-secondary;
+    &:hover { background: darken($color-secondary, 7%); }
+    &.toggled { background: darken($color-secondary, 10%); box-shadow: 0 3px darken($color-secondary, 24%) inset; }
   }
   &.success {
-    background: $success;
-    &:hover { background: darken($success, 7%); }
-    &.toggled { background: darken($success, 10%); box-shadow: 0 3px darken($success, 24%) inset; }
+    background: $color-success;
+    &:hover { background: darken($color-success, 7%); }
+    &.toggled { background: darken($color-success, 10%); box-shadow: 0 3px darken($color-success, 24%) inset; }
   }
   &.alert {
-    background: $alert;
-    &:hover { background: darken($alert, 7%); }
-    &.toggled { background: darken($alert, 10%); box-shadow: 0 3px darken($alert, 24%) inset; }
+    background: $color-alert;
+    &:hover { background: darken($color-alert, 7%); }
+    &.toggled { background: darken($color-alert, 10%); box-shadow: 0 3px darken($color-alert, 24%) inset; }
   }
   &.warning {
-    background: $warning;
-    &:hover { background: darken($warning, 7%); }
-    &.toggled { background: darken($warning, 10%); box-shadow: 0 3px darken($warning, 24%) inset; }
+    background: $color-warning;
+    &:hover { background: darken($color-warning, 7%); }
+    &.toggled { background: darken($color-warning, 10%); box-shadow: 0 3px darken($color-warning, 24%) inset; }
   }
 }
 
 .panel {
-  background: $secondary;
+  background: $color-secondary;
   padding: 0.1rem 1.4rem; margin: 1rem 0;
 }
 
@@ -154,8 +154,8 @@ table {
   &.expand { width: 100%; }
 }
 
-hr { margin: 2rem 0; border: 0; border-top: 1px solid $secondary; }
+hr { margin: 2rem 0; border: 0; border-top: 1px solid $color-secondary; }
 
 code, kbd, pre, samp {
-  background: lighten($secondary, 5%);
+  background: lighten($color-secondary, 5%);
 }
