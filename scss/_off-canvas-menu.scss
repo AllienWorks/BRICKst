@@ -34,8 +34,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 // -----------[ OFF-CANVAS WRAPPER ]----------- //
 
 #outer-wrap { // wrapper for the whole page
-	position: relative; overflow: hidden;
-	width: 100%;
+  position: relative; overflow: hidden;
+  width: 100%;
 }
 #inner-wrap {
   position: relative;
@@ -44,9 +44,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   .js-nav & { left: $offcanvas-width; }
   .csstransforms3d.csstransitions.js-ready & {
     left: 0 !important;
-		transform: translate3d(0,0,0);
-		transition: transform 500ms ease;
-		backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    transition: transform 500ms ease;
+    backface-visibility: hidden;
   }
   .csstransforms3d.csstransitions.js-nav & {
     transform: translate3d($offcanvas-width,0,0) scale3d(1,1,1);
@@ -56,13 +56,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 .nav-btn,
 .close-btn { // off-canvas control buttons
-	display: block; width: 2.625rem; height: 2.25rem; padding: 0;
-	background-size: 1.875rem 1.875rem; border: 0;
-	text-indent: 100%;
-	overflow: hidden;	white-space: nowrap;
-	outline: none; -webkit-tap-highlight-color: rgba($color-black, 0);
-	&:hover,
-	&:focus { opacity: 1; }
+  display: block; width: 2.625rem; height: 2.25rem; padding: 0;
+  background-size: 1.875rem 1.875rem; border: 0;
+  text-indent: 100%;
+  overflow: hidden; white-space: nowrap;
+  outline: none; -webkit-tap-highlight-color: rgba($color-black, 0);
+  &:hover,
+  &:focus { opacity: 1; }
 }
 
 
@@ -70,15 +70,16 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 #top { // site header (title and menu button on mobile)
   position: relative; z-index: 100;
-	color: $color-white;
+  color: $color-white; text-align: center;
   background: $offcanvas-bg;
-  padding: 1.5rem 1rem;
-  .block-title {
-		margin: 0;
-		font-size: pem(30); line-height: pem(36, 30); text-align: center; white-space: nowrap;
-	}
+  height: 3.6rem; padding: 1rem 1rem;
+  a.site-title {
+    display: inline-block; margin: 0;
+    font-size: 1.1rem; line-height: 1.5; color: $bg; text-transform: uppercase;
+    white-space: nowrap;
+  }
   .nav-btn { // off-canvas open button
-    position: absolute; top: pem(24); left: pem(30);
+    position: absolute; top: 0.7rem; left: 1.4rem;
     background: $offcanvas-bg url("../img/nav-icon.svg") left center no-repeat;
     opacity: 0.7;
     // fallback for browsers not supporting SVG
@@ -91,10 +92,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 // ---------------[ NAVIGATION ]--------------- //
 
 #nav { // menu
-	position: absolute; top: 0; z-index: 200;
-	overflow: hidden;
-	width: 100%; padding-top: pem(84);
-	color: $color-white;
+  position: absolute; top: 0; z-index: 200;
+  overflow: hidden;
+  width: 100%; padding-top: 3.6rem;
+  color: $color-white;
   background: $offcanvas-bg;
   @include break($offcanvas-break) { position: relative; padding-top: 0; }
   &:not(:target) {
@@ -105,50 +106,50 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     .close-btn { display: block; }
   }
   .js-ready & {
-		width: $offcanvas-width; height: 100%;
-		left: (0 - $offcanvas-width);
-		background: $offcanvas-bg; box-shadow: inset pem(-24) 0 pem(24) pem(-12) rgba($color-black, 0.25);
+    width: $offcanvas-width; height: 100%;
+    left: (0 - $offcanvas-width);
+    background: $offcanvas-bg; box-shadow: inset pem(-24) 0 pem(24) pem(-12) rgba($color-black, 0.25);
     @include break($offcanvas-break) {
       width: auto; height: auto;
       left: auto;
       box-shadow: none;
     }
     .block { background: transparent; }
-		.close-btn {
-			display: block;
+    .close-btn {
+      display: block;
       opacity: 0.7;
-			&:focus,
-			&:hover { opacity: 1; }
-		}
+      &:focus,
+      &:hover { opacity: 1; }
+    }
   }
   .csstransforms3d.csstransitions.js-ready & {
     left: 0;
-		transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
     backface-visibility: hidden;
     @include break($offcanvas-break) { transform: translate3d(0,0,0); }
     .block {
-			opacity: 0.7;
-			transition: opacity 300ms 100ms ease, transform 500ms ease;
-			transform: translate3d($offcanvas-width,0,0) scale3d(0.9,0.9,0.9);
+      opacity: 0.7;
+      transition: opacity 300ms 100ms ease, transform 500ms ease;
+      transform: translate3d($offcanvas-width,0,0) scale3d(0.9,0.9,0.9);
       transform-origin: 50%, 0%;
       @include break($offcanvas-break) {
         opacity: 1;
         transform: translate3d(0,0,0) scale3d(1,1,1);
         transition: none;
       }
-		}
+    }
   }
   .csstransforms3d.csstransitions.js-nav & {
     .block {
-			opacity: 1;
+      opacity: 1;
       transform: translate3d(0,0,0);
       @include break($offcanvas-break) {}
-		}
+    }
   }
 
   .close-btn { // off-canvas close button
     background: $offcanvas-bg url("../img/close-btn.svg") left center no-repeat; 
-    position: absolute; top: pem(-60); left: pem(30);
+    position: absolute; top: -2.9rem; left: 1.4rem;
     opacity: 1;
     @include break($offcanvas-break) { @include visuallyhidden; }
     // fallback for browsers not supporting SVG
@@ -156,11 +157,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   }
 
   .block { // menu content
-		position: relative;
-		padding: 0;
+    position: relative;
+    padding: 0;
     .block-title { @include visuallyhidden; }
     .section { // e.g. text content in the sidebar/menu
-      padding: pem(12, 14) pem(30, 14);
+      padding: 1.7rem 1.5rem;
     }
 
     ul {
@@ -183,29 +184,29 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
         border-right: pem(10) $color-white solid;
       }
       a {
-        display: block; padding: pem(12, 14) pem(30, 14);
+        display: block; padding: 0.8rem 1.5rem;
         color: $color-white;
         outline: none;
         &:focus,
         &:hover { background: $offcanvas-bg-hover; }
       }
     }
-	}
+  }
 }
 
 
 // --------------[ MAIN CONTENT ]-------------- //
 
 #main { // main content
-	background: $color-white;
-	.block {
-		padding: pem(42) pem(30);
-	}
+  background: $color-white;
+  .block {
+    padding: pem(42) pem(30);
+  }
 }
 
 
 // -----------------[ FOOTER ]----------------- //
 
 footer[role="contentinfo"] {
-	background: $bg;
+  background: $bg;
 }
