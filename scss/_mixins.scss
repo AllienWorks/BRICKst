@@ -1,7 +1,11 @@
 
 // Responsive mixin (Foundation-like medium/large + custom-made "hd" breakpoint)
 @mixin break($media) {
-  @if $media == s { 
+  @if $media == xs { 
+    // Usage: @include break(xs) { .. }
+    @media only screen and (min-width: $break-xs) { @content; }
+  }
+  @else if $media == s {
     // Usage: @include break(s) { .. }
     @media only screen and (min-width: $break-s) { @content; }
   }

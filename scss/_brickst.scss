@@ -159,3 +159,41 @@ hr { margin: 2rem 0; border: 0; border-top: 1px solid $color-secondary; }
 code, kbd, pre, samp {
   background: lighten($color-secondary, 5%);
 }
+
+
+// ------ DEBUG ------ //
+
+.debug-responsivity {
+  display: none;
+  @if ( $debug ) { display: block; }
+  .size {
+    position: absolute; bottom: 0; right: 0;
+    background: $text;
+    color: $bg; font-size: 10px; font-weight: 800;
+    padding: 1px 4px;
+    display: none;
+    @include break(xs) {
+      &.xs { display: block; }
+    }
+    @include break(s) {
+      &.xs { display: none; }
+      &.s { display: block; }
+    }
+    @include break(m) {
+      &.xs, &.s { display: none; }
+      &.m { display: block; }
+    }
+    @include break(t) {
+      &.xs, &.s, &.m { display: none; }
+      &.t { display: block; }
+    }
+    @include break(l) {
+      &.xs, &.s, &.m, &.t { display: none; }
+      &.l { display: block; }
+    }
+    @include break(xl) {
+      &.xs, &.s, &.m, &.t, &.l { display: none; }
+      &.xl { display: block; }
+    }
+  }
+}
